@@ -66,8 +66,7 @@ save_config_terms(Fd) :-
 save_config_terms(_).
 
 load_config(File) :-
-	with_long_atoms(with_strings(do_load_config(File))).
-do_load_config(File) :-
+	op(1, fx, pce:($)),
 	open(File, read, Fd),
 	retractall(config(_)),
 	do_read(Fd, Term),
@@ -89,7 +88,10 @@ load_config(Term, Fd) :-
 	load_config(Term2, Fd).
 
 do_read(Fd, Term) :-
-	catch(read_term(Fd, Term, [singletons(L),module(pce)]), Error, true),
+	catch(read_term(Fd, Term, [ singletons(L),
+				    module(pce)
+				  ]),
+	      Error, true),
 	(   nonvar(Error)
 	->  message_to_string(Error, Msg)
 	;   L \== []
