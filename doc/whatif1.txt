@@ -1,0 +1,421 @@
+What-if items bij de optica leeromgeving, versie 1
+
+Casper Hulshof
+Januari/februari 1997
+
+
+Algemeen
+
+Tijdens de bijeenkomst van 23 januari zijn een aantal voorstellen gedaan over de prestatietoetsen die in 
+het experiment van Frans gebruikt zullen worden.  Het experiment is verdeeld in 3 sessies.  De bedoeling 
+is dat er aan het begin van de eerste sessie een voortest wordt gedaan.  Aan het eind van de eerste twee 
+sessies wordt een natoets afgelegd, waarvan de lengte afhankelijk is van de fase die de proefpersoon op 
+dat moment bereikt heeft.  Deze manier van testen vereist natuurlijk dat de items over fasen verdeeld 
+zijn.  De natoets aan het eind van de derde sessie zal over alle fasen gaan (ongeacht de fase die de 
+proefpersoon heeft bereikt), en dus uit alle items bestaan.
+
+Er zullen twee soorten items zijn: what-if items en normale meerkeuzeitems.  
+
+Fase 0 (dat wil zeggen, de fase die oorspronkelijk fase 0 was, daarna korte tijd fase 1, en die nu niet 
+meer genoemd wordt in Frans’ ontwerp van de optica leeromgeving) geldt meer als een gewenningsfase 
+en introductie tot de handelingsmogelijkheden binnen de optica-leeromgeving (de opdrachten zijn ook 
+heel algemeen); deze fase is daarom niet geschikt om vragen over te stellen.
+Als we per fase uitgaan van ongeveer 7 what-if items en 4 normale items, komen we in totaal op 
+(7+4)*5 = 55 items.  In werkelijkheid zal het aantal items per fase iets verschillen: over fase 3 t/m 5 zijn 
+meer what-if items op te stellen dan over fase 1 en 2.
+
+
+Fase
+Beschrijving
+1
+Breking met dikke lenzen
+2
+Brandpuntsafstand met dunne lenzen
+3
+Beeldvorming
+4
+Kwantitatieve vergroting en lenzenformule
+5
+Meer dan 1 lens
+Samenvatting fasen
+
+
+What-if items
+
+De what-if items zijn steeds uit drie zaken opgebouwd.  Ten eerste wordt een situatie geschetst waar 
+een plaatje bij hoort; hieronder wordt tevens een beknopte tekstbeschrijving gegeven, maar die is alleen 
+voor de duidelijkheid toegevoegd; in de uiteindelijke test zal alleen het plaatje te zien zijn.  Het plaatje 
+komt rechtstreeks uit de leeromgeving en is dus bij de proefpersoon vertrouwd.  Op dit moment zijn nog 
+niet alle fasen in de leeromgeving geïmplementeerd, de platholle lens en de dunne lenzen ontbreken nog 
+bijvoorbeeld.  Daarom kunnen nog niet alle plaatjes gecreëerd worden: een beschrijving van de situatie 
+moet in die gevallen waar deze objecten een rol spelen.  Oorspronkelijk was het idee om alle plaatjes 
+staan in bitmap-formaat (*.BMP) op schijf te zetten.  Het is echter veel efficienter als slechts de positie 
+van voorwerpen opgeslagen wordt: deze vorm zal dan ook gebruikt worden.
+Ten tweede wordt een vraag gesteld die betrekking heeft op de gevolgen die een bepaalde verandering 
+aan de afgebeelde situatie.  Ten derde worden in korte bewoordingen drie antwoordmogelijkheden 
+gegeven, waarvan er uiteraard slechts een de juiste is.  In de items hieronder is het goede antwoord 
+onderstreept.  Een beter idee is om ook de antwoordmogelijkheden in drie plaatjes af te beelden.  Het 
+formaat waarin de plaatjes worden weggeschreven maakt dit mogelijk, alleen moet het wel mogelijk zijn 
+om deze (fysisch onmogelijke) situaties in de leeromgeving aan te brengen.
+Hieronder wordt ook nog bij ieder item een bijbehorend parallelitem gegeven.  Daarin wordt meestal 
+dezelfde situatie gepresenteerd met ofwel andere voorwerpen of andere bewegingsrichtingen.
+
+What-if items bij fase 1 van de optica leeromgeving
+
+In fase 1 zijn de kwantitatieve regels eenvoudig omdat het begrip brandpuntsafstand nog geen rol speelt.  
+Er is sprake van twee bolle en twee holle lenzen die ten eerste de eigenschap hebben dat de ene lens 2 
+maal zo dik is als de andere terwijl ook de brandpuntsafstand precies een factor 2 scheelt. 
+
+1-1. 
+Situatie: lampje en lens (platbol).  Lichtstraal en lens maken een hoek van 90 graden (dat wordt niet 
+aangegeven maar is duidelijk te zien).
+
+
+
+ 
+
+
+Vraag: Waar raakt de lichtstraal de hoofdas als we de lens vervangen door een dubbelbolle?
+
+Antwoordmogelijkheden: dichterbij de lens, verder van de lens vandaan, plaats blijft hetzelfde
+
+Parallelitem: Vervangen van dubbelbolle lens door platbolle.
+
+1-2.
+Situatie: lampje en lens (dubbelbol). De lichtstraal is in een hoek van 25 graden op de lens gericht.
+
+
+
+
+ 
+
+
+Vraag: Waar raakt de lichtstraal de hoofdas als we de hoek tussen de lichtstraal en de lens verkleinen?
+
+Antwoordmogelijkheden: dichterbij de lens, verder van de lens vandaan, plaats blijft hetzelfde
+
+Parallelitem: Vergroten hoek (beginnen met kleinere hoek).
+
+
+1-3.
+Situatie: lampje en lens (dubbelbol). De lichtstraal is in een hoek van 25 graden op de lens gericht.
+
+
+
+ 
+
+
+Vraag: Waar raakt de lichtstraal de hoofdas als we de lens een stukje naar links bewegen?
+
+Antwoordmogelijkheden: dichterbij de lens, verder van de lens vandaan, plaats blijft hetzelfde
+
+Parallelitem: lens naar rechts bewegen.
+
+1-4.
+Situatie: lampje en lens (dubbelhol). De lichtstraal is in een bepaalde hoek van op de lens gericht, en de 
+lichtstraal gaat recht door het midden van de lens.
+
+
+
+ 
+
+
+Vraag: Hoe schijnt de lichtstraal als we de lens een stukje naar links bewegen?
+
+Antwoordmogelijkheden: rechtuit, gebroken naar onder, gebroken naar boven
+
+Parallelitem: lens naar rechts bewegen.
+
+
+1-5. (een te moeilijke opgave, denk ik)
+Situatie: lampje en lens (platbol).  Lichtstraal en hoofdas maken een hoek van ongeveer 15 graden.
+
+
+
+ 
+
+
+Vraag:  Waar komt de lichtstraal terecht als we de lens vervangen door een met de bolling aan de 
+rechterkant?
+
+Antwoordmogelijkheden: dichterbij de lens, verder van de lens vandaan, plaats blijft hetzelfde
+
+Parallelitem: Lens met een bolling aan de rechterkant vervangen door een met bolling aan de linkerkant.
+
+
+What-if items bij fase 2 van de optica leeromgeving
+
+De belangrijkste opdracht in deze fase is het achterhalen van de verschillen tussen de (dunne) lenzen A, 
+B, en C.  De items moeten dus betrekking hebben op deze verschillen.  Er moet in de leeromgeving 
+telkens duidelijk aangegeven zijn met welke lens gewerkt wordt.
+
+2-1.
+Situatie: lampje en lens A. Lichtstraal en lens maken een hoek van 90 graden (dat wordt niet aangegeven 
+maar is duidelijk te zien).
+
+Vraag: Waar raakt de lichtstraal de hoofdas als we de lens vervangen door lens B?
+
+Antwoordmogelijkheden: dichterbij de lens, verder van de lens vandaan, raakt hoofdas niet
+
+Parallelitem: Vervangen van lens B door lens A.
+
+2-2.
+Situatie: lampje en lens B.  Lampje staat een stukje boven de x-as en schijnt door het midden van de 
+lens.
+
+Vraag: Wat gebeurt er met de lichtstraal als we de lens vervangen door lens C?
+
+Antwoordmogelijkheden: blijft hetzelfde, breekt naar boven, breekt naar beneden.
+
+Parallelitem: Vervangen van lens C door lens B.
+
+
+2-3.
+Situatie: lampje en lens C. Lichtstraal en lens maken een hoek van 90 graden (dat wordt niet aangegeven 
+maar is duidelijk te zien).
+
+Vraag: Hoe buigt de lichtstraal af als we de lens een stukje naar rechts bewegen?
+
+Antwoordmogelijkheden: buigt sterker af, buigt zwakker af, blijft hetzelfde.
+
+Parallelitem: Lens naar links bewegen.
+
+2-4.
+Situatie: lampje en lens C.  Het lampje staat onder de x-as, en de lichtstraal is gericht iets onder het 
+middelpunt van de lens—de lichtstraal buigt naar onderen af.
+
+Vraag: Hoe buigt de lichtstraal af als we de lens een stukje naar links bewegen?
+
+Antwoordmogelijkheden: buigt sterker af, buigt zwakker af, blijft hetzelfde.
+
+Parallelitem: Lens naar rechts bewegen.
+
+2-5.
+Situatie: lampje en lens C. Lichtstraal en lens maken een hoek van 90 graden (dat wordt niet aangegeven 
+maar is duidelijk te zien).
+Vraag: Waar ligt het brandpunt van de lens als we het lampje naar boven schuiven?
+Antwoordmogelijkheden: (hier worden met drie pijlen de drie mogelijkheden aangegeven) links van de 
+lens (op de juiste afstand), op de lens, rechts van de lens (symmetrisch ten opzichte van de lens met 
+betrekking tot de eerste antwoordmogelijkheid)
+
+Parallelitem: Lampje naar beneden schuiven.
+
+
+What-if items bij fase 3 van de optica leeromgeving
+
+Schematische afbeelding mogelijkheden:
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ook in fase 3 is de eigenlijke opdracht het vinden van de verschillende eigenschappen van drie lenzen A, 
+B, en C; dit zijn dezelfde lenzen die in fase 2 onderzocht zijn: nu gaat het echter om het afbeelden van de 
+letter L op een scherm (waarbij scherpte en vergroting een rol spelen, alsmede het virtueel worden van 
+het beeld).  We kunnen de positie van voorwerp, lens, en beeldscherm variëren en dan vragen naar a) de 
+positie van een van de twee andere voorwerpen om een scherp beeld te krijgen, b) (bij het bewegen van 
+voorwerp of lens en het scherp stellen van het beeld) naar de vergroting.  Ook kunnen we het type lens 
+variëren en vragen naar a) de positie van het beeldscherm om het beeld scherp te krijgen, b) naar de 
+vergroting (na scherpstelling van het beeld).
+
+
+3-1.
+Situatie: Lamp gericht op L-plaat; daarna lens A en een scherp beeld op het scherm.
+
+
+
+ 
+
+
+Vraag: Waar moet het beeldscherm staan om een scherp beeld te krijgen als lens A vervangen door lens 
+B?
+
+Antwoordmogelijkheden: dichterbij de lens, verder van de lens vandaan, plaats blijft hetzelfde
+
+Parallelitem: Lens B vervangen door lens A.
+
+3-2.
+Situatie: Als bij vraag 3-1.
+
+
+
+ 
+
+
+Vraag: Als we de lens vervangen door lens B en het beeld scherp stellen, hoe verandert dan de grootte 
+van het plaatje?
+
+Antwoordmogelijkheden: vergroot, verandert niet, verkleind.
+
+Parallelitem: Lens B vervangen door lens A.
+
+3-3
+Situatie: Als bij 3-1 en 3-2.
+
+Vraag: Als we de L-plaat (of: het voorwerp) naar links verschuiven en dan het beeld scherp stellen, hoe 
+verandert dan de grootte van het plaatje?
+
+Antwoordmogelijkheden: vergroot, verandert niet, verkleind.
+
+Parallelitem: L-plaat naar rechts verschuiven.
+
+
+Verdere itemopbouw bij fase 3, en fase 4
+
+Over de precieze opbouw van de fasen moeten nog duidelijke afspraken gemaakt worden, zeker na het 
+commentaar van Wouter van Joolingen.  Hieronder staat een schematische opbouw van de mogelijke 
+items.  Daaronder staan een aantal (nog niet in de stijl van de eerdere fasen geformatteerde) items die op 
+deze indeling aansluiten.  Deze schematische indeling is ook bruikbaar als het gaat om het construeren 
+van een 'standaardtest', dat wil zeggen een normale multiple-choice vragenlijst waarin ook kwantitatieve 
+en meer complexe vragen voorkomen.
+Fase 4 is erop gericht de nadruk te verschuiven van een kwalitatieve naar een kwantitatieve benadering 
+van de lenzenformule en de vergroting.  In principe kunnen een aantal van de hierna besproken items 
+ook kwantitatief gebruikt worden; de What-if test vereist evenwel dat de items niet te ingewikkeld 
+mogen zijn.
+
+
+
+Schematische opbouw
+
+We kunnen een bepaalde situatie presenteren en dan vragen:
+
+A. wat er met het (scherpe) beeld gebeurt als:
+
+A1. we het voorwerp bewegen
+A2. we de brandpuntsafstand veranderen (een andere lens nemen)
+A3. we zowel de positie van het voorwerp als de brandpuntsafstand veranderen
+
+Situatie A3 is niet bruikbaar in een what-if testformaat vanwege de te grote complexiteit van het item.
+
+Parallelitems hebben bij A1 betrekking naar links of rechts bewegen van het voorwerp, en bij A2 op het 
+vergroten of verkleinen van de brandpuntsafstand.  Specifiekere vragen (meer kwantitatief) kunnen gaan 
+over de precieze vergroting of verkleining.
+In geval A3 (dat wellicht te complex is) kunnen de antwoordmogelijkheden zijn: 1. beeld wordt groter, 
+2. beeld wordt kleiner, 3. beeld blijft gelijk.
+
+Als we ook de brandpuntsafstand in het plaatje aangeven kunnen we vragen wat er met het beeld 
+gebeurt, of hoe groot het beeld is, als:
+
+A4. we het voorwerp (dat verder dan 2f staat) precies op 2f zetten (een meetlatje moet onder 
+het plaatje staan)
+A5. we het voorwerp (dat op 2f staat) een klein stukje naar rechts bewegen
+A6. we het voorwerp precies op f zetten
+A7. we het voorwerp (dat op f staat) een klein stukje naar rechts bewegen
+
+In geval A6 is er geen beeld, misschien moet deze antwoordoptie (‘er is geen beeld’) ook in de gevallen 
+A4 en A5 aanwezig zijn.  In geval A9 wordt het beeld virtueel.
+Parallel aan A4 tot en met A6 kunnen items gaan over het de andere kant op bewegen van het 
+voorwerp.
+
+B. waar het voorwerp moet staan om het beeld scherp te houden als:
+
+B1. we het beeldscherm bewegen
+B2. we de brandpuntsafstand veranderen
+
+Ook hier kunnen parallelitems bij B1 betrekking hebben op naar links of rechts bewegen, en bij B2 op 
+het vergroten of verkleinen van de brandpuntsafstand.
+Bij deze vragen kunnen in het plaatje drie mogelijke posities van het voorwerp worden aangewezen, 
+waarbij uiteraard een de juiste is.
+
+C. wat er moet gebeuren om een virtueel beeld te verkrijgen, als:
+
+C1. Er sprake is van een positieve lens
+C2. Er sprake is van een negatieve lens
+
+Bij C1 moet het voorwerp binnen de brandpuntsafstand gebracht worden.  Als dat niet kan is de enige 
+mogelijkheid de lens te vervangen door een negatieve lens.  een antwoordmogelijkheid kan natuurlijk 
+ook zijn: ‘niet mogelijk’.  In geval C2 is er altijd sprake van een virtueel beeld.
+
+Met betrekking tot de formule N = |b/v| is het ook goed om kennis over de omkeerbaarheid van die 
+formule te testen.   Dus ook b = Nv en v = b/N.
+
+Als dus de vergroting gegeven wordt is het mogelijk om de grootte van een virtueel beeld te berekenen.
+
+
+Items
+Met de antwoordmogelijkheid ‘niet te beantwoorden’ wordt bedoeld dat er in de gegeven situatie 
+meerdere mogelijkheden bestaan, waardoor de vraag niet eenduidig te beantwoorden is.  Het soort 
+plaatje dat ik me bij die antwoordmogelijkheid voorstel is een kruis of een ‘verboden in te rijden’-bord 
+of iets dergelijks.
+
+Van de drie genoemde antwoordmogelijkheden is de laatste steeds het juiste antwoord, voor zover ik 
+het zelf weet tenminste.  Voor de parallelitems gelden natuurlijk bijna altijd andere juiste antwoorden.
+
+In vraag 2 wordt gesproken over brandpuntsafstand, waarmee in ieder geval verondersteld wordt dat de 
+proefpersoon dit woord (inmiddels) kent.  Het is mij niet helemaal duidelijk of en hoe het uitleggen van 
+dit soort termen in de leeromgeving wordt ingepast.
+
+De plaatjes in de items zullen er hetzelfde uit moeten gaan zien als de plaatjes die in de leeromgeving 
+worden gebruikt.  Ik denk dat het nodig is om onder alle in de items te gebruiken voorwerp-lens-
+beeldconfiguraties een meetlatje te zetten waar in ieder geval de brandpuntsafstand van de lens op is 
+aangegeven.
+
+
+1.	In deze situatie is de afbeelding van het voorwerp vergroot.  
+Vraag: Welke van de onderstaande plaatjes geeft weer wat er met het beeld gebeurt als we het 
+voorwerp een klein stukje naar rechts bewegen?
+
+mogelijkheden: kleiner, niet te beantwoorden, groter
+
+2.	In deze situatie is de afbeelding niet helemaal scherp.  
+Vraag: Wat gebeurt er met het beeld als we de lens vervangen door een andere met een kleinere 
+brandpuntsafstand?
+
+mogelijkheden: wordt scherper, wordt minder scherp, niet te beantwoorden
+
+3.	In deze situatie is de afbeelding scherp en vergroot.
+Vraag: Welke van de onderstaande plaatjes geeft waar het beeldscherm moet staan als we de lens 
+vervangen door een andere met een kleinere brandpuntsafstand en tegelijkertijd het voorwerp een klein 
+stukje naar rechts bewegen?
+
+
+In vraag 4 t/m 7 moet duidelijk zijn wat de afstand van voorwerp en beeldscherm tot de lens zijn.  De 
+vragen volgen het schema zoals gegeven in A4 t/m A7 (er is sprake van een soort sequentie).  De 
+antwoordmogelijkheden kunnen voor alle vragen zijn: beeld wordt kleiner, beeld wordt groter, beeld 
+verdwijnt.
+
+
+8.	In deze situatie is het beeld scherp.  
+Vraag: Als we het beeldscherm 1 centimeter naar rechts bewegen, waar moet dan het voorwerp staan 
+om het beeld scherp te houden?
+
+Als antwoordmogelijkheden worden twee posities aangewezen, en de mogelijkheid ‘niet te 
+beantwoorden’ gegeven.
+
+9.	In deze situatie is het beeld scherp.  
+Vraag: Als we de lens vervangen door een andere met een kleinere brandpuntsafstand, waar moet dan 
+het voorwerp staan om het beeld scherp te houden?
+
+Ook hier worden twee posities aangewezen, en de mogelijkheid ‘niet te beantwoorden’ gegeven.
+
+10.	In deze situatie is er sprake van een positieve lens.  
+Vraag: Hoe moet het voorwerp bewogen worden om het beeld te laten verdwijnen?  [of: om het beeld 
+virtueel te maken] 
+
+mogelijkheden: het beeld kan niet virtueel worden, bewegen niet nodig want het beeld is altijd virtueel, 
+(aangewezen positie—binnen de brandpuntsafstand)
+
+11.	In deze situatie is er sprake van een negatieve lens.
+Vraag: Hoe moet het voorwerp bewogen worden om het beeld te laten verdwijnen?  [of: om het beeld 
+virtueel te maken] 
+
+mogelijkheden: (aangewezen positie), het beeld kan niet virtueel worden, bewegen niet nodig want het 
+beeld is altijd virtueel.
+
+
+What-if items bij fase 5 van de optica leeromgeving
+
+Van deze fase zijn op dit moment nog geen items beschikbaar.
+
+1
+
+
+

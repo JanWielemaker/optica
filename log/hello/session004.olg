@@ -1,0 +1,31 @@
+/*  Log file created by Optica simulation
+    Date: Tue Jan 22 20:57:36 2002
+*/
+
+%% Header
+subject(hello).
+epoch(1011729456.2).
+config_file('/staff/jan/src/sgw/optica/demo.opa').
+config_file_modified(942856416.0).
+%% End Header
+
+@(1.2,
+  experiment(open('Vrij Experimenteren',
+		  state(state, '',
+			[ m1 = lens(label(''),
+				    radius(5),
+				    thickness(1),
+				    focal_distance(*),
+				    sfere_left(0),
+				    sfere_right(0),
+				    breaking_index(1.51),
+				    pos_x(6.95),
+				    show_gauge(true),
+				    instrument_name(plat)),
+			  l1 = lamp3(switch(true),
+				     angle(-32.4276),
+				     divergence(5),
+				     pos_x(1.05),
+				     pos_y(2.15),
+				     instrument_name(puntbron))
+			])))).

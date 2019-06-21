@@ -1,0 +1,93 @@
+<!DOCTYPE stress SYSTEM "dtd/stress.dtd">
+
+<stress>
+<!-- Define labels.  These are mapped by the internal machinery to labels
+  -->
+
+<message id=ok>Doorgaan</message>
+
+<!-- DEFAULTS -->
+
+<default element="question" attribute="valign"  value="center">
+<default element="question" attribute="bgcolor" value="grey80">
+<default element="question" attribute="modal"   value="true">
+
+<default element="tip" attribute="valign"  value="above">
+<default element="tip" attribute="bgcolor" value="white">
+<default element="tip" attribute="modal"   value="false">
+
+<!-- QUESTIONS -->
+
+<question id=q1 title="About chocolates">
+Do <em>you</em> like <B>chocolates</B>?
+
+<slider>
+  <from>Not at all
+  <to>a lot
+</slider>
+</question>
+
+<question id=q2 title="The meaning of live">
+What is the <b>meaning of live</b> according to <em>The Hitchhikers
+Guide to the Galaxy</em>?
+
+<choose>
+  <choice>Infinite
+  <choice>1984
+  <choice>42
+  <choice>None of the above
+</choose>
+</question>
+
+<question id=paintings1 title="Paintings">
+<img src="monalisa.xpm" alt="Painting" align=right>
+At the right, you see the image of a famous painting.  What is the
+<b>name</b> of this painting?
+
+<choose>
+  <choice>Monalisa
+  <choice>Rembrand
+  <choice>De nachtwacht
+</choose>
+</question>
+
+
+<!-- TIPS -->
+
+<tip id="glas" title="Materialen">
+Wist je dat lenzen soms ook van <b>plastic</b> gemaakt worden?
+</tip>
+
+<tip id="rotate" title="Rotate lamp">
+<img align=left src="../icons/rotlamp.xpm" alt=""> Met deze tool
+kunt u laserstralen roteren.  U kunt de laserstraal beetpakken
+<em>voor</em> het eerste breukvlak.
+</tip>
+
+<tip id="tip3" title="demo tip 3">
+Dit is demo tip 3
+</tip>
+
+<tip id="tip4" title="demo tip 4">
+Dit is demo tip 4
+</tip>
+
+<tip id="tip5" title="demo tip 5">
+Dit is demo tip 5
+</tip>
+
+<!-- SCHEDULE INTERRUPTIONS QUESTIONS -->
+
+<fase id="fase_1">
+<showtip   id="glas"	time="00:30">
+<showtip   id="rotate"	time="00:20">
+<showtip   id="tip3"	time="01:00">
+<interrupt time="05:00"	show="q1">
+<interrupt time="10:00"	show="q2">
+</fase>
+
+<fase id="fase_2">
+<showtip   id="tip4"	time="00:20">
+<showtip   id="tip5"	time="01:30">
+</fase>
+</stress>

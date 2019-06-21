@@ -1,0 +1,7 @@
+/*  Test results for "(unknown)" started Fri Jan 23 12:30:18 1998
+*/
+
+test('whatif/Demonstratie').
+pp('(unknown)').
+epoch(885555018.0).
+

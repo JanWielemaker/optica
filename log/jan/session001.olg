@@ -1,0 +1,246 @@
+/*  Log file created by Optica simulation
+    Date: Tue Mar 30 15:23:59 2004
+*/
+
+%% Header
+subject(jan).
+epoch(1080653039.3).
+config_file('/staff/jan/src/sgw/optica/casper.opa').
+config_file_modified(1019739070.0).
+%% End Header
+
+@(6.2, mode('lens B')).
+@(7.2,
+  add(m1 = lens(label('B'),
+		radius(5.0),
+		thickness(0.1),
+		focal_distance(5.0),
+		sfere_left(5.0),
+		sfere_right(5.0),
+		breaking_index(1.51),
+		pos_x(6.5),
+		show_gauge(false),
+		instrument_name('lens B')))).
+@(9.0, mode(lampje1)).
+@(9.7,
+  add(l1 = lamp1(switch(true),
+		 angle(0.0),
+		 pos_y(4.25),
+		 pos_x(1.4),
+		 instrument_name(lampje1)))).
+@(16.0, mode(ymove)).
+@(17.1 - 18.6,
+  move(l1, y, 4.25,
+       [ @(0.5, drag(-2.0)),
+	 @(1.2, drag(2.4))
+       ])).
+@(19.6, mode(xmove)).
+@(20.6 - 22.0,
+  move(m1, x,
+       [ @(0.7, drag(23.15)),
+	 @(1.3, drag(16.7))
+       ])).
+@(24.1, mode('lens C')).
+@(30.3, mode(lamp2)).
+@(31.1,
+  add(l2 = parlamp(switch(true),
+		   angle(0.0),
+		   separation(0.5),
+		   pos_x(8.4),
+		   pos_y(0.9),
+		   instrument_name(lamp2)))).
+@(34.2, mode(lampje3)).
+@(35.1,
+  add(l3 = lamp3(switch(true),
+		 angle(0.0),
+		 divergence(5.0),
+		 pos_x(10.9),
+		 pos_y(4.1),
+		 instrument_name(lampje3)))).
+@(44.0, mode(biglamp1)).
+@(44.7, add(l4 = biglamp(instrument_name(biglamp1)))).
+@(46.4, mode('L-plaat')).
+@(47.7,
+  add(s1 = shield(pos_x(4.5),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(51.5, mode(scherm)).
+@(52.2, add(s2 = shield2(pos_x(29.0), instrument_name(scherm)))).
+@(56.8, mode(xmove)).
+@(58.5 - 77.2,
+  move(s2, x,
+       [ @(0.4, drag(32.0)),
+	 @(1.8, drag(7.1)),
+	 @(2.7, drag(39.05)),
+	 @(7.2, drag(0.0)),
+	 @(8.2, drag(5.75)),
+	 @(8.7, drag(4.0)),
+	 @(11.9, drag(37.6)),
+	 @(12.4, drag(31.5)),
+	 @(14.2, drag(29.3)),
+	 @(17.4, drag(5.1)),
+	 @(18.8, drag(25.1))
+       ])).
+@(78.3, mode(extend_beam)).
+@(82.7,
+  add(x1 = beam_extender(path('l3-beam2'),
+			 segment(1),
+			 colour_name(orange_red)))).
+@(85.3, mode(protractor)).
+@(92.4,
+  add(a1 = protractor(path('l1-beam'),
+		      segment(1),
+		      location(13.5)))).
+@(93.6,
+  add(a2 = protractor(path('l1-beam'),
+		      segment(2),
+		      location(1.1)))).
+@(98.4, mode(ruler)).
+@(101.0, add(d1 = ruler(from(m1), to(s2), offset(8.5)))).
+@(105.5, add(d2 = ruler(from(l3), to(m1), offset(10.1)))).
+@(110.9, mode(delete)).
+@(111.6, delete(s1)).
+@(115.0, delete(s2)).
+@(118.1, mode(rotlamp)).
+@(119.7 - 121.9,
+  rotate(l1,
+	 [ @(0.2, drag(72.8973)),
+	   @(1.5, drag(-25.56)),
+	   @(1.7, drag(-20.556))
+	 ])).
+@(123.4, mode(tool)).
+@(127.5 - 134.8,
+  tool(m1,
+       [ @(5.1, tool(label, 'D'))
+       ])).
+@(151.0, mode(scherm)).
+@(153.3, add(s3 = shield2(pos_x(21.9),
+			  instrument_name(scherm)))).
+@(155.7, mode('L-plaat')).
+@(156.4,
+  add(s4 = shield(pos_x(6.7),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(160.0, mode(xmove)).
+@(161.4 - 163.2,
+  move(s4, x,
+       [ @(0.4, drag(11.05)),
+	 @(1.0, drag(4.55)),
+	 @(1.7, drag(10.25))
+       ])).
+@(164.4 - 171.2,
+  move(s3, x,
+       [ @(1.1, drag(39.3)),
+	 @(2.4, drag(3.6)),
+	 @(3.1, drag(23.8)),
+	 @(3.3, drag(23.75)),
+	 @(4.4, drag(32.7)),
+	 @(5.5, drag(1.65)),
+	 @(6.7, drag(32.0))
+       ])).
+@(174.2 - 177.1,
+  move(s4, x,
+       [ @(0.5, drag(15.35)),
+	 @(1.8, drag(1.7)),
+	 @(2.2, drag(14.4)),
+	 @(2.4, drag(3.0)),
+	 @(2.6, drag(7.9)),
+	 @(2.8, drag(7.7))
+       ])).
+@(178.4 - 180.9,
+  move(m1, x,
+       [ @(0.4, drag(31.05)),
+	 @(1.4, drag(16.0)),
+	 @(1.7, drag(19.85)),
+	 @(2.2, drag(18.45))
+       ])).
+@(182.6, mode('L-plaat')).
+@(183.3,
+  add(s5 = shield(pos_x(23.1),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(185.5,
+  add(s6 = shield(pos_x(29.25),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(186.6,
+  add(s7 = shield(pos_x(40.65),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(187.2,
+  add(s8 = shield(pos_x(36.85),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(188.5,
+  add(s9 = shield(pos_x(20.5),
+		  unit(1.0),
+		  instrument_name('L-plaat')))).
+@(189.1,
+  add(s10 = shield(pos_x(16.1),
+		   unit(1.0),
+		   instrument_name('L-plaat')))).
+@(199.0,
+  quit(afbeelden,
+       state(state, '',
+	     [ l4  = biglamp(instrument_name(biglamp1)),
+	       m1  = lens(label('D'),
+			  radius(5.0),
+			  thickness(0.1),
+			  focal_distance(5.0),
+			  sfere_left(5.0),
+			  sfere_right(5.0),
+			  breaking_index(1.51),
+			  pos_x(18.45),
+			  show_gauge(false),
+			  instrument_name('lens B')),
+	       l1  = lamp1(switch(true),
+			   angle(-20.556),
+			   pos_y(2.4),
+			   pos_x(1.4),
+			   instrument_name(lampje1)),
+	       l2  = parlamp(switch(true),
+			     angle(0.0),
+			     separation(0.5),
+			     pos_x(8.4),
+			     pos_y(0.9),
+			     instrument_name(lamp2)),
+	       l3  = lamp3(switch(true),
+			   angle(0.0),
+			   divergence(5.0),
+			   pos_x(10.9),
+			   pos_y(4.1),
+			   instrument_name(lampje3)),
+	       x1  = beam_extender(path('l3-beam2'),
+				   segment(1),
+				   colour_name(orange_red)),
+	       a1  = protractor(path('l1-beam'),
+				segment(1),
+				location(13.5)),
+	       d2  = ruler(from(l3), to(m1), offset(10.1)),
+	       s3  = shield2(pos_x(32.0),
+			     instrument_name(scherm)),
+	       s4  = shield(pos_x(7.7),
+			    unit(1.0),
+			    instrument_name('L-plaat')),
+	       a2  = protractor(path('l1-beam'),
+				segment(2),
+				location(1.1)),
+	       s5  = shield(pos_x(23.1),
+			    unit(1.0),
+			    instrument_name('L-plaat')),
+	       s6  = shield(pos_x(29.25),
+			    unit(1.0),
+			    instrument_name('L-plaat')),
+	       s7  = shield(pos_x(40.65),
+			    unit(1.0),
+			    instrument_name('L-plaat')),
+	       s8  = shield(pos_x(36.85),
+			    unit(1.0),
+			    instrument_name('L-plaat')),
+	       s9  = shield(pos_x(20.5),
+			    unit(1.0),
+			    instrument_name('L-plaat')),
+	       s10 = shield(pos_x(16.1),
+			    unit(1.0),
+			    instrument_name('L-plaat'))
+	     ]))).

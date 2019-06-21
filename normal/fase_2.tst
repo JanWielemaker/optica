@@ -1,0 +1,33 @@
+question(1, 'item  2-1',
+	 'Als we de drie lampjes aanzetten schijnen ze
+recht op de lens.  Waar komen de lichtstralen
+samen?',
+	 [ '4 centimeter achter de lens',
+	   '8 centimeter achter de lens',
+	   '16 centimeter achter de lens',
+	   'weet niet'
+	 ],
+	 state(state, '',
+	       [ m1  = lens(label(''),
+			    radius(5),
+			    thickness(0.1),
+			    focal_distance(8),
+			    sfere_left(*),
+			    sfere_right(*),
+			    breaking_index(1.51),
+			    pos_x(10.3),
+			    show_gauge(true)),
+		 l4  = parlamp(switch(false),
+			       angle(0),
+			       separation(1),
+			       pos_x(6.25),
+			       pos_y(1)),
+		 c1  = construction_line(pos_x(14.3)),
+		 c2  = construction_line(pos_x(18.3)),
+		 c3  = construction_line(pos_x(26.25)),
+		 c4  = construction_line(pos_x(6.3)),
+		 d7  = ruler(from(m1), to(c4), pos_y(5.75)),
+		 d8  = ruler(from(m1), to(c1), pos_y(6.1)),
+		 d10 = ruler(from(m1), to(c2), pos_y(5)),
+		 d11 = ruler(from(m1), to(c3), pos_y(3.55))
+	       ])).

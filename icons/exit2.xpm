@@ -1,0 +1,30 @@
+/* XPM */
+static char * exit2_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"32 19 5 1",
+/* colors */
+" 	s None	c None",
+".	s bottomShadowColor	m black	c dark slate grey",
+"X	s iconColor4	m white	c green",
+"o	s topShadowColor	m white	c gainsboro",
+"O	c red",
+/* pixels */
+"                                ",
+" .XXXXXXXXXXXXXXXXXXXXXo        ",
+" .XXXXXXXXXXXXXXXXXXXXXo        ",
+" .XXXXXXXXXXXXXXXXXXXXXo        ",
+" .XXo               XXXo        ",
+" .XXo               XXXo .      ",
+" .XXo                    .O.    ",
+" .XXo                    .OO    ",
+" .XXo      .OOOOOOOOOOOOOOOOO.  ",
+" .XXo      .OOOOOOOOOOOOOOOOOO. ",
+" .XXo      .OOOOOOOOOOOOOOOOOo  ",
+" .XXo                    oOO    ",
+" .XXo                    oOo    ",
+" .XXo               XXXo o      ",
+" .XXo               XXXo        ",
+" .XXXXXXXXXXXXXXXXXXXXXo        ",
+" .XXXXXXXXXXXXXXXXXXXXXo        ",
+" .XXXXXXXXXXXXXXXXXXXXXo        ",
+"                                "};

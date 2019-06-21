@@ -1,0 +1,21 @@
+/* XPM */
+static char * separator_xpm[] = {
+"16 14 4 1",
+" 	s None	c None",
+".	c grey95",
+"X	c black",
+"o	c gold",
+"                ",
+"                ",
+"...... X .......",
+".....XXXX.......",
+"    XX X ..     ",
+"  o XX   ..  o  ",
+"o   XX   ..   oo",
+"    XX   ..     ",
+" o  XX   ..  o  ",
+"    XX   ..     ",
+"    XX X ..     ",
+"XXXXXXXXX..XXXXX",
+"XXXXXX X .XXXXXX",
+"                "};

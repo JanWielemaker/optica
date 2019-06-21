@@ -1,0 +1,23 @@
+/* XPM */
+static char * minitool_xpm[] = {
+"16 14 6 1",
+" 	s None	c None",
+".	c yellow",
+"X	c orange",
+"o	c black",
+"O	c azure2",
+"+	c chocolate",
+" .    .X .      ",
+" X.ooo .X.      ",
+"..oOOOo .oooooo ",
+" XoOOOo oOOOOOo ",
+" . oOo oOooooOOo",
+".  oOo oo oooOOo",
+"   oOo    oo oo ",
+"   oOo    oo    ",
+"  +++++  ++++   ",
+"  +++++  ++++   ",
+"  +++++  ++++   ",
+"  +++++  ++++   ",
+"  +++++  ++++   ",
+"  +++++  ++++   "};

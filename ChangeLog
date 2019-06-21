@@ -1,0 +1,7 @@
+[OPTICA 2.3]
+
+* ADDED: move gestures now recognise configured X/Y ranges for instruments.
+
+* FIXED: rulers to `lamp3' objects were reported as to/from `centerline'.
+  to_graphical/2 in ruler.pl contains a backward compatibility patch to
+  read old states/files.

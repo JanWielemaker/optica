@@ -1,0 +1,22 @@
+/* XPM */
+static char * dragplus_crs[] = {
+"16 16 3 1 7 4",
+" 	s None	c None",
+".	c white",
+"X	c black",
+"                ",
+"       .        ",
+".......X....... ",
+".XXX...X...XXX. ",
+".X.X.XXXXX.X.X. ",
+".XXX...X...XXX. ",
+".......X......  ",
+"       .        ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                "};

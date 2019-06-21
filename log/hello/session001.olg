@@ -1,0 +1,46 @@
+/*  Log file created by Optica simulation
+    Date: Tue Jan 22 20:29:45 2002
+*/
+
+%% Header
+subject(hello).
+epoch(1011727785.8).
+config_file('/staff/jan/src/sgw/optica/demo.opa').
+config_file_modified(942856416.0).
+%% End Header
+
+@(19.9, mode('echte-lens')).
+@(21.4, mode(lhalfrond)).
+@(22.1, mode(rhalfrond)).
+@(22.8, mode(plat)).
+@(23.5, mode(rhalfrond)).
+@(24.0, mode(lhalfrond)).
+@(24.5, mode('echte-lens')).
+@(25.4, mode(plat)).
+@(25.9, mode(laser)).
+@(27.0, mode(puntbron)).
+@(28.7,
+  add(l1 = lamp3(switch(true),
+		 angle(0),
+		 divergence(5),
+		 pos_x(6),
+		 pos_y(2.85),
+		 instrument_name(puntbron)))).
+@(29.0 - 31.3, tool(l1, [])).
+@(33.8, mode(ymove)).
+@(34.9 - 36.1,
+  move(l1, y, 2.85,
+       [ @(0.4, drag(-4.9)),
+	 @(0.8, drag(5.15)),
+	 @(0.9, drag(4.95))
+       ])).
+@(37.5, mode(move)).
+@(40.9, mode(xmove)).
+@(42.8 - 44.1,
+  move(l1, x, 6,
+       [ @(0.3, drag(10.2)),
+	 @(0.6, drag(-0.4)),
+	 @(0.9, drag(7.35)),
+	 @(1.0, drag(6.95)),
+	 @(1.3, drag(7.45))
+       ])).

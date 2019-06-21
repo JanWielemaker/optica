@@ -1,0 +1,67 @@
+/*  Log file created by Optica simulation
+    Date: Tue Jan 22 21:15:53 2002
+*/
+
+%% Header
+subject(hwllo).
+epoch(1011730553.3).
+config_file('/staff/jan/src/sgw/optica/demo.opa').
+config_file_modified(1011730537.0).
+%% End Header
+
+@(8.2, mode(rotlamp)).
+@(11.7, mode('ideale-lens')).
+@(12.3,
+  add(m1 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(5),
+		sfere_left(0),
+		sfere_right(0),
+		breaking_index(1.51),
+		pos_x(4.1),
+		show_gauge(true),
+		instrument_name('ideale-lens')))).
+@(17.6, mode(tool)).
+@(23.6, mode('echte-lens')).
+@(24.0,
+  add(m2 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(*),
+		sfere_left(10),
+		sfere_right(10),
+		breaking_index(1.51),
+		pos_x(8.85),
+		show_gauge(true),
+		instrument_name('echte-lens')))).
+@(25.1, mode(tool)).
+@(25.8 - 29.6, tool(m2, [])).
+@(33.1 - 35.5,
+  view(help,
+       [ @(0.0, action(help_viewer))
+       ])).
+@(37.4,
+  quit('Vrij Experimenteren',
+       state(state, '',
+	     [ m1 = lens(label(''),
+			 radius(5),
+			 thickness(0.1),
+			 focal_distance(5),
+			 sfere_left(0),
+			 sfere_right(0),
+			 breaking_index(1.51),
+			 pos_x(4.1),
+			 show_gauge(true),
+			 instrument_name('ideale-lens')),
+	       m2 = lens(label(''),
+			 radius(5),
+			 thickness(0.1),
+			 focal_distance(*),
+			 sfere_left(10),
+			 sfere_right(10),
+			 breaking_index(1.51),
+			 pos_x(8.85),
+			 show_gauge(true),
+			 instrument_name('echte-lens'))
+	     ]))).

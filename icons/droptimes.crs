@@ -1,0 +1,22 @@
+/* XPM */
+static char * droptimes_crs[] = {
+"16 16 3 1 7 4",
+" 	s None	c None",
+".	c white",
+"X	c black",
+"                ",
+"    ... ...     ",
+".....X...X..... ",
+".XXX..X.X..XXX. ",
+".X.X...X...X.X. ",
+".XXX..X.X..XXX. ",
+".....X...X....  ",
+"    ............",
+"       .XXXXXXX.",
+"       .X.....X.",
+"       .X..X..X.",
+"       .X.XXX.X.",
+"       .X..X..X.",
+"       .X.....X.",
+"       .XXXXXXX.",
+"       ........."};

@@ -1,0 +1,115 @@
+/*  $Id: language.save,v 1.1.1.1 1999/11/17 16:33:37 jan Exp $
+
+    Part of XPCE
+    Designed and implemented by Anjo Anjewierden and Jan Wielemaker
+    E-mail: jan@swi.psy.uva.nl
+
+    Copyright (C) 1997 University of Amsterdam. All rights reserved.
+*/
+
+:- module(language,
+	  [ message/2,			% Id, Message
+	    current_language/1,		% -Language
+	    set_language/1,		% +Language
+	    message_module/1		% +Module
+	  ]).
+%:- use_module(configdb).
+:- require([ concat_atom/2
+	   , get/3
+	   , get/4
+	   , is_list/1
+	   , memberchk/2
+	   , new/2
+	   , pce_extended_class/1
+	   ]).
+
+:- dynamic
+	current_language/1,
+	current_message_module/1.
+
+%current_language(english).
+current_language(dutch).
+
+current_message_module(language).
+
+set_language(Lan) :-
+	retractall(current_language(_)),
+	assert(current_language(Lan)),
+	make_errors.
+
+message_module(Module) :-
+	current_message_module(Module), !.
+message_module(Module) :-
+	asserta(current_message_module(Module)),
+	make_errors.
+
+
+message(Term, Translation) :-
+	current_language(Lan),
+	current_message_module(Module),
+	Module:term(Term, Translations),
+	(   is_list(Translations)
+	->  T =.. [Lan, Translation0],
+	    memberchk(T, Translations),
+	    (	is_list(Translation0)
+	    ->	concat_atom(Translation0, Translation)
+	    ;	Translation = Translation0
+	    )
+	;   Translation = Translations
+	), !.
+message(Term, Translation) :-
+	get(Term, label_name, Translation).
+
+
+		 /*******************************
+		 *    MAP DIALOG IDENTIFIERS	*
+		 *******************************/
+
+:- pce_extend_class(dialog_item).
+
+label_name(DI, Id:name, Label:'name|image') :<-
+	"Multilingual label service"::
+	message(Id, Label0),
+	(   atomic(Label0)
+	->  get(DI, resource_value, label_suffix, Suffix),
+	    get(Label0, ensure_suffix, Suffix, Label)
+	;   Label = Label0
+	).
+
+:- pce_end_class.
+
+:- pce_extend_class(dialog_group).
+
+label_name(_DI, Id:name, Label:name) :<-
+	"Multilingual label service"::
+	(   message(Id, Label),
+	    atomic(Label)
+	->  true
+	;   get(Id, label_name, Label)
+	).
+
+:- pce_end_class.
+
+:- pce_extend_class(menu_item).
+
+default_label(_MI, Id:name, Label:'name|image') :<-
+	"Multilingual label service"::
+	message(Id, Label).
+
+:- pce_end_class.
+
+
+make_errors :-
+	current_language(Lan),
+	current_message_module(Module),
+	T =.. [Lan, Message],
+	Module:error(Id, Kind, Messages),
+	(   memberchk(T, Messages)
+	->  true
+	;   Message = Id
+	),
+	new(_E, error(Id, Message, Kind, report)),
+	fail.
+make_errors.
+
+:- initialization make_errors.

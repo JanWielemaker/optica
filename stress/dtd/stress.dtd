@@ -1,0 +1,70 @@
+<!-- stress.dtd
+This SGML DTD builds on top  of   the  HTML dtd, defining primitives for
+interrupts in the optica learning environment.
+
+The entities used from HTML are
+
+	%block;		Anything that can be in an HTML body
+	%inline;	
+-->
+
+<!ENTITY % control "slider | ok">
+
+<!ENTITY % htmlspec SYSTEM "HTML4.dtd">
+%htmlspec;
+
+<!ELEMENT stress   - - (question|tip|fase|message|default)*>
+<!ELEMENT fase	   - - (showtip|interrupt)*>
+<!ELEMENT message  - o (#PCDATA)>
+<!ELEMENT question - o (qbody,(slider|choose))>
+
+<!ELEMENT qbody    o o (%flow;)*>
+<!ELEMENT slider   - - (from+,to)>
+<!ELEMENT from	   - o (%inline;)>
+<!ELEMENT to	   - o (%inline;)>
+<!ELEMENT tip	   - - (%flow;)*>
+<!ELEMENT choose   - - (choice+)>
+<!ELEMENT choice   - o (#PCDATA)>
+
+<!ELEMENT interrupt - o EMPTY>
+<!ELEMENT showtip   - o EMPTY>
+<!ELEMENT default   - o EMPTY>
+
+<!ATTLIST fase
+  id		CDATA		#REQUIRED
+>
+<!ATTLIST message
+  id		CDATA 		#REQUIRED
+>
+<!ATTLIST (question|tip)
+  id  	   	ID	     	#REQUIRED
+  title	   	CDATA 	     	#IMPLIED
+  bgcolor   	CDATA        	#IMPLIED
+  valign	(above|top|center) #IMPLIED
+  modal		(true|false)	#IMPLIED
+>
+<!ATTLIST showtip
+  time		CDATA		#IMPLIED
+  id  	   	IDREF	     	#REQUIRED
+>
+<!ATTLIST interrupt
+  time     	CDATA 		#REQUIRED
+  show	 	IDREF 		#REQUIRED
+>
+<!ATTLIST default
+  element	NAME		#REQUIRED
+  attribute	NAME		#REQUIRED
+  value		CDATA		#REQUIRED
+>
+
+
+
+
+
+
+
+
+
+
+
+

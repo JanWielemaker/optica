@@ -1,0 +1,162 @@
+<!DOCTYPE stress SYSTEM "dtd/stress.dtd">
+
+<stress>
+<!-- Define labels.  These are mapped by the internal machinery to labels
+  -->
+
+<message id=ok>Doorgaan</message>
+
+<!-- DEFAULTS -->
+
+<default element="question" attribute="valign"  value="center">
+<default element="question" attribute="bgcolor" value="grey80">
+<default element="question" attribute="modal"   value="true">
+
+<default element="tip" attribute="valign"  value="above">
+<default element="tip" attribute="bgcolor" value="white">
+<default element="tip" attribute="modal"   value="false">
+
+<!-- QUESTIONS -->
+
+<question id=q1 title="Vraag 1">
+Vind je optica een moeilijk onderwerp?
+
+<slider>
+  <from>Nee, helemaal niet
+  <to>Ja, heel erg
+</slider>
+</question>
+
+<question id=q2 title="Vraag 2">
+Vind je dit programma moeilijk te gebruiken?
+
+<slider>
+  <from>Nee, helemaal niet
+  <to>Ja, heel erg
+</slider>
+</question>
+
+<question id=q3 title="Vraag 3">
+Kun je de adviezen die zo nu en dan in beeld komen gebruiken?
+
+<slider>
+  <from>Nee, totaal niet
+  <to>Ja, ze zijn heel nuttig
+</slider>
+</question>
+
+<question id=q4 title="Vraag 1">
+Vind je optica een moeilijk onderwerp?
+
+<slider>
+  <from>Nee, helemaal niet
+  <to>Ja, heel erg
+</slider>
+</question>
+
+<question id=q5 title="Vraag 2">
+Vind je dit programma moeilijk te gebruiken?
+
+<slider>
+  <from>Nee, helemaal niet
+  <to>Ja, heel erg
+</slider>
+</question>
+
+<question id=q6 title="Vraag 3">
+Kun je de adviezen die zo nu en dan in beeld komen gebruiken?
+
+<slider>
+  <from>Nee, totaal niet
+  <to>Ja, ze zijn heel nuttig
+</slider>
+</question>
+
+
+<!-- TIPS -->
+<tip id="tip0" title="Opdracht">
+Je opdracht is om uit te vinden op welke manier licht door lenzen heen gaat. Dat doe je door zelf situaties te maken. Op het papier dat je hebt gekregen staat het allemaal nog iets duidelijker.
+</tip>
+
+<tip id="tip1" title="Lenzen">
+Een dunne lens is een zwakke lens, een dikke lens is een sterke lens.
+<BR>Advies: Vergelijk verschillende lenzen met elkaar, en bekijk het verschil.
+<BR>Geschikt voorwerp om te gebruiken: Lampje met 1 lichtstraal.
+<BR>Te verwachten uitkomst: Door een dikke lens worden lichtstralen sterker afgebogen dan door een dunne lens.
+</tip>
+
+<tip id="tip2" title="Afbuigen">
+Een dikke lens buigt lichtstralen meer af dan een dunne lens. De brandpuntsafstand (f) is de afstand tot de lens waar een horizontaal invallende lichtstraal de hoofdas snijdt.
+<BR>Advies: Vergelijk verschillende lenzen met elkaar, en bekijk verschillen in de manier waarop lichtstralen afbuigen.
+<BR>Geschikte voorwerpen om te gebruiken: lampje met 1 lichtstraal, hoekmeting.
+<BR>Te verwachten uitkomst: Door een sterke lens worden lichtstralen sterker afgebogen dan door een dunne lens.
+</tip>
+
+<tip id="tip3" title="Voorwerp en beeld">
+De plaat met gaatjes moet je zien als het voorwerp, dat door de lens (omgekeerd) wordt afgebeeld. De voorwerpsafstand is de afstand tussen het voorwerp en de lens. De beeldafstand is de afstand tot de lens van de plaats waar het voorwerp scherp wordt afgebeeld.
+<BR>Advies: Zet een lens neer, en zet dan de plaat met gaatjes links van de lens neer, en het dichte scherm aan de rechterkant van de lens. Nu wordt het voorwerp (de L) afgebeeld door de lens op het scherm. Kijk waar de L scherp wordt afgebeeld.
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm.
+<BR>Te verwachten uitkomst: De verhouding tussen de voorwerpsafstand, de beeldafstand, en de sterkte van de lens (uitgedrukt als 1/f) is 1/v + 1/b = 1/f -- Dat betekent: (1 gedeeld door de voorwerpsafstand) plus (1 gedeeld door de beeldafstand) is gelijk aan (1 gedeeld door de brandpuntafstand). 
+</tip>
+
+<tip id="tip4" title="Divergerende lichtbundel">
+In de plaat met gaatjes kun je elk gaatje zien als een divergerende lichtbundel. Elk gaatje werkt dus in principe precies hetzelfde als het lampje met drie divergerende lichtbundels.
+<BR>Advies: Zet het lampje met drie divergerende lichtbundels op dezelfde plaats als de plaat met gaatjes. Nu kun je precies zien waar de lichtstralen samenkomen en het beeld scherp is.
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm, lampje met drie divergerende lichtbundels, meetlijnen. 
+</tip>
+
+<tip id="tip5" title="Brandpuntsafstand">
+De brandpuntsafstand van een lens is belangrijk, omdat het veel uitmaakt of een voorwerp zich binnen of buiten de brandpuntsafstand van een lens bevindt.
+<BR>Advies: Zet de plaat met gaatjes op verschillende afstanden van de lens, zowel binnen als buiten de brandpuntsafstand, en kijk wat de invloed is op het beeld.
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm, lampje met drie divergerende lichtbundels, meetlijnen.
+</tip>
+
+<tip id="tip6" title="Virtueel beeld">
+Als het voorwerp binnen de brandpuntsafstand van de lens staat, wordt het beeld virtueel. Het virtuele beeld verschijnt aan dezelfde kant van de lens als het voorwerp.
+<BR>Advies: Het 'oog' is speciaal in dit programma om je te laten zien op welke plaats het virtuele beeld staat en hoe het er uitziet. Plaats het oog ergens (maakt niet uit waar) rechts van de lens. Als je het voorwerp in de buurt van de lens brengt, zie je het virtuele beeld verschijnen.
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm, lampje met drie divergerende lichtbundels, meetlijnen, oog.
+</tip>
+
+<tip id="tip7" title="Lens op brandpuntsafstand">
+Als het voorwerp precies op de brandpuntsafstand van de lens staat, dan snijden de lichtstralen elkaar nergens en is er dus ook zowel geen reëel als virtueel beeld.
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm, lampje met drie divergerende lichtbundels, hoekmeting.
+</tip>
+
+<tip id="tip8" title="Vergrotingsformule">
+Of een afbeelding groter of kleiner dan het voorwerp is, is afhankelijk van de voorwerpsafstand en de beeldafstand. Dit kan worden uitgedrukt in een vergrotingsformule.
+<BR>Advies: Maak een scherpe afbeelding van de L, en meet de afstand van het voorwerp en beeld tot de lens. Als de beeldafstand groter is dan de voorwerpsafstand dan moet het beeld vergroot zijn ten opzichte van het voorwerp. Klopt dat ook? Je kunt verschillende posities proberen.
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm, meetlijnen, groottemeting.
+<BR>Te verwachten uitkomst: De vergroting S van het beeld (dus of de puntjes op het beeld verder uit elkaar staan dan op het voorwerp) is S = B / V. De vergroting is gelijk aan de beeldafstand gedeeld door de voorwerpsafstand. Als S kleiner dan 0 is dan is er sprake van verkleining in plaats van vergroting.
+</tip>
+
+<tip id="tip9" title="Lenzenformule">
+De lenzenformule beschrijft de relatie tussen de sterkte van een lens, de voorwerpsafstand, en de beeldafstand.
+<BR>Advies: Maak een scherp beeld, en bekijk de voorwerpsafstand en de beeldafstand. Doe dit voor verschillende lenzen. Kun je de verhouding afleiden?
+<BR>Geschikte voorwerpen om te gebruiken: Plaat met gaatjes, scherm, meetlijnen, oog.
+<BR>Te verwachten uitkomst: De verhouding tussen de voorwerpsafstand, de beeldafstand, en de sterkte van de lens (uitgedrukt als 1/f) is 1/v + 1/b = 1/f -- Dat betekent: (1 gedeeld door de voorwerpsafstand) plus (1 gedeeld door de beeldafstand) is gelijk aan (1 gedeeld door de brandpuntafstand). 
+</tip>
+
+
+
+<!-- SCHEDULE INTERRUPTIONS QUESTIONS -->
+
+<fase id="afbeelden">
+<showtip  id="tip0"	time="04:00">
+<showtip  id="tip1"	time="04:00">
+<showtip  id="tip2"	time="04:00">
+<showtip  id="tip3"	time="04:00">
+<showtip  id="tip4"	time="04:00">
+<showtip  id="tip5"	time="04:00">
+<showtip  id="tip6"	time="04:00">
+<showtip  id="tip7"	time="04:00">
+<showtip  id="tip8"	time="04:00">
+<showtip  id="tip9"	time="04:00">
+<interrupt time="15:00"	show="q1">
+<interrupt time="16:00"	show="q2">
+<interrupt time="17:00"	show="q3">
+<interrupt time="45:00"	show="q4">
+<interrupt time="46:00"	show="q5">
+<interrupt time="47:00"	show="q6">
+</fase>
+
+</stress>

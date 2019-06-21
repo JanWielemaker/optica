@@ -1,0 +1,132 @@
+\documentclass[11pt,twocolumn]{article}
+\usepackage[dutch]{babel}
+\selectlanguage{dutch}
+\usepackage{html}
+\usepackage{pl}
+\usepackage{psfig}
+\onefile
+\renewcommand{\runningtitle}{Optica}
+\newcommand{\tick}[1]{\item #1\hfill\\}
+
+\setcounter{topnumber}{100}
+\renewcommand{\topfraction}{0.9}
+\setcounter{totalnumber}{100}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\dblfloatpagefraction}{0.8}
+\renewcommand{\floatpagefraction}{0.8}
+
+\makeatletter
+\def\fps@figure{h}
+\makeatother
+
+\begin{document}
+
+\title{\vskip -1.2in
+       Optica --- Simulatie en leeromgeving}
+\author{Jan Wielemaker \\
+        SWI, Universiteit van Amsterdam \\
+        E-mail: jan@swi.psy.uva.nl}
+
+\maketitle
+
+\section*{Wat is het SWI}
+
+De vakgroep {\em Sociaal Wetenschappelijke Informatica} van de
+Universiteit van Amsterdam werkt ondermeer aan kennisintensieve
+(computer-)systemen en intelligente onderwijssystemen. Om dit onderzoek
+te ondersteunen is XPCE/Prolog ontwikkeld, een software
+ontwikkelomgeving die, middels de integratie van een geavanceerde
+grafische omgeving en de AI taal Prolog, zeer geschikt is voor
+interactieve kennisintensieve software.
+
+De optische simulatieomgeving {\em Optica} is ontwikkeld voor het SGW%
+	\footnote{Stichting Gedrags Wetenschappen}
+project ``Inductief leren'', bedoeld om de invloed van algemene
+leervaardigheden (b.v.\ systematisch werken) op het leren met een
+simulatieomgeving te onderzoeken.
+
+
+\section*{Wat is optica?}
+
+Optica biedt een simulatieomgeving met lenzen, diverse lichtbronnen,
+schermen en meetinstrumenten. 
+
+Optica kan op twee manieren gebruikt worden. Gevorderden kunnen met de
+gehele verzameling instrumenten naar eigen inzicht experimenteren (een
+natuurkundige die betrokken is bij het experiment waarvoor optica
+ontwikkeld is heeft er een zoomlens in gemaakt).
+
+Het is echter ook mogelijk om experimenteeromgevingen in optica te
+configureren. Een experimenteeromgevingen bestaat uit een
+deelverzameling van de instrumenten, waarbij ook de
+manipulatiemogelijkheden ingeperkt kunnen worden. Aan een
+experimenteeromgevingen kan een tekst met theorie, een handleiding en
+een toets gekoppeld worden.
+
+
+\section*{Instrumenten}
+
+Optica bevat de hieronder genoemde instrumenten.  Er is geen beperking
+aan het aantal instrumenten wat gelijktijdig gebruikt kan worden.
+
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \tick{lens}
+Met instelbare diameter, bolling (van plat tot cirkel, inclusief
+hol-bolle lenzen), kleinste dikte en brekingsindex materiaal.  Lenzen
+kunnen gemodeleerd worden met de wet van Snellius (inclusief
+reflectie) of met de ideale lenzenwet.
+
+    \tick{laserstraal}
+Kan overal opgesteld worden.  Hoek met de optische as is instelbaar.
+
+    \tick{punt lichtbron}
+Kan overal opgesteld worden.
+
+    \tick{Grote diffuse lamp}
+Voor beschijning optisch scherm.
+
+    \item{Scherm met gaatjes in de vorm van een `L'}
+    \tick{Scherm voor beeldvorming}
+De twee schermen kunnen gezamelijk gebruikt worden om beeldvorming en
+vergroting te illustreren.  
+    \item{`Oog' om langs de optische as naar de lichtbron te `kijken'}
+    \item{Meetinstrumenten voor afstanden en hoeken}
+    \item{`Virtuele' verlenging voor lichtstralen}
+    \item{Simpele calculator}
+    \item{Grafieken en tabellen}
+    \item{Aantekenblok}
+\end{itemize}
+
+
+\section*{Computer configuratie}
+
+Optica is beschikbaar voor Windows 95, Windows NT en Unix. Voor soepele
+werking is een machine met Pentium 100 en 16 MB geheugen gewenst. De
+Optica distributie past op een enkele 3.5'' floppy disk. Het systeem
+vraagt ca. 3.5 MB ruimte op de harde schijf.
+
+
+\section*{Voorbeelden}
+
+Hieronder volgen enkele schermen die de mogelijkheden van optica
+illustreren.
+
+\postscriptfig[width=\linewidth]{fig1}{Lens met laser, afstandmeter en
+hoekmeter}
+
+\postscriptfig[width=\linewidth]{fig2}{Beeldvorming met een lens,
+ge\"illustreerd met scherm en puntbron}
+
+\postscriptfig[width=\linewidth]{fig3}{Brandpuntafstand van een
+negatieve lens, gemeten d.m.v.\ virtuele verlenging stralen en afstandmeter}
+
+\postscriptfig[width=\linewidth]{fig4}{Configuratiescherm
+voor een experimenteeromgeving.	 Er wordt een omgeving gemaakt voor
+illustratie van de brekingswetten van Snellius, bestaande uit een
+halve glazen cirkel, een laserstraal en diverse meet- en
+manipulatieexperimenten.}
+
+\end{document}

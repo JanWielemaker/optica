@@ -1,0 +1,618 @@
+ - 1 -
+
+
+
+
+
+Optica:
+
+18 februari 1997; Frans Prins.
+
+
+
+Dit is een volgend ontwerp voor de optica-leeromgeving. De
+Optica-omgeving is uitgebreid tot zeven fasen naar aanleiding van de
+bespreking in Enschede van 17 februari.
+
+Hieronder worden allereerst de algemene tools beschreven. Deze zijn in
+elke fase voortdurend beschikbaar. Vervolgens zullen voor elke fase de
+volgende punten aan de orde komen:
+
+A. Theorie zoals men die op het scherm krijgt.
+
+B. Opdracht zoals men die op het scherm krijgt
+
+C. Experimenteerobjecten
+
+D. Instelvariabelen
+
+E. Afhankelijke variabelen
+
+F. Te ontdekken regels
+
+
+
+Algemene tools
+
+- Electronisch aantekenblok
+
+	Oproepbaar via een pull-down-menu of ander knopje. Het is
+	mogelijk om in het aantekenblok hypothesen, conclusies,
+	verbanden, opmerkingen te typen zoals bij een simpele
+	teksteditor. Bovendien kan een proefopstelling, d.w.z. de plek
+	van alle objecten die op dat moment op de bank staan, in het
+	aantekenblok worden gezet. De aantekeningen plus opstelling
+	kunnen bewaard worden onder een naam en later opnieuw worden
+	bekeken. Nieuwe aantekeningen moeten onder een nieuwe naam
+	worden bewaard. Op het moment dat het aantekenblok actief is kan
+	er niet geëxperimenteerd worden. Tijd van activeren, de
+	handelingen en de tijd van de-activeren wordt gelogd.
+
+- Theorie
+
+	Via een pull-down-menu of ander knopje kan men toegang krijgen
+	tot de theorie die aan het begin van de huidige fase gegeven is.
+	Op het moment dat de theorie zichtbaar is kan er niet
+	geëxperimenteerd worden. Tijd van activeren en de tijd van
+	de-activeren wordt gelogd.
+
+- Opdracht
+
+	Via een pull-down-menu of ander knopje kan men toegang krijgen
+	tot de opdracht die aan het begin van de huidige fase gegeven
+	is. Op het moment dat de opdracht zichtbaar is kan er niet
+	geëxperimenteerd worden. Tijd van activeren en de tijd van
+	de-activeren wordt gelogd.
+
+- Handelingsmogelijkheden
+
+	Wanneer men een fase voor het eerst binnengaat krijgt men, na de
+	theorie, een lijst die beschrijft welke objecten in die fase te
+	gebruiken zijn en een korte tekstuele uitleg bij die objecten.
+	Via een pull-down-menu of ander knopje kan men later tijdens het
+	experimenteren toegang krijgen tot die uitleg. Op het moment dat
+	de uitleg zichtbaar is kan er niet geëxperimenteerd worden. Tijd
+	van activeren en de tijd van de-activeren wordt gelogd. Wanneer
+	men een fase voor het eerst binnengaat krijgt men ook een tutor
+	waarin geoefend kan worden met de manipulatie van de objecten.
+
+- Teruspringen naar eerdere fasen
+
+	Het is mogelijk om terug te gaan naar eerdere fasen via een
+	pull-down-menu of andere knop. Het is niet mogelijk om verder te
+	springen naar een volgende fase als in de fase daar voorafgaand
+	minder dan een kwartier geëxperimenteerd wordt. Als men voor de
+	tweede keer in een fase zit hoeft men niet te voldoen aan de
+	minimale experimenteertijd voor die fase. Dat geldt ook als de
+	eerdere keer in een vorige sessie plaatsvond. Er wordt per fase
+	gelogd zoals beschreven op de komende pagina's.
+
+- 'Clear-icon'. Voortdurend beschikbaar om een object weg te halen.
+
+- 'Clear-all-icon'. Verwijdert elk object.
+
+
+
+Fase 1
+
+A. Theorie:
+
+Alle onderdelen van Optica gaan over licht. Zoals bekend wordt licht
+opgewekt en uitgezonden door lichtbronnen, bijvoorbeeld een gloeilamp,
+een TL-buis of de zon. Een belangrijk eigenschap van licht is dat het
+zich rechtlijnig voortbeweegt.
+
+
+
+Men onderscheidt drie soorten lichtbundels:
+
+- Divergerende lichtbundels: de lichtstralen komen uit één punt.
+
+- Convergerende lichtbundels: de lichtstralen gaan naar één punt.
+
+- Evenwijdige lichtbundels: de lichtstralen hebben dezelfde richting.
+
+De lichtbron die beschikbaar is in fase 1 geeft één smalle, evenwijdige
+lichtbundel, weergegeven door een dunne lijn.
+
+
+
+Voor de experimenten die je in Optica gaat doen gebruik je naast de
+lichtbronnen verschillende lenzen. Een lens is een doorschijnend
+voorwerp, meestal van glas, dat begrensd wordt door ten minste één
+gebogen oppervlak. In fase 1 bekijken we relatief dikke lenzen waarbij
+de gebogen oppervlakken bolvormig zijn. Je hebt bolle, positieve lenzen
+en holle, negatieve lenzen. De lijn die loodrecht door het midden van de
+lens gaat noemen we de hoofdas.
+
+B. Opdracht 1:
+
+	Probeer door het uitvoeren van experimenten te achterhalen wat
+	er gebeurt als een lichtstraal door een relatief dikke lens
+	gaat. Welke principes kun je vinden?
+
+C. Experimenteerobjecten
+
+- Optische bank
+
+	Niet verplaatsbaar.
+
+- Draaibaar lampje met één lichtstraal. Beginhoek is 80 graden, zodat
+eerst een hoek ingesteld moet worden voor er een experiment gedaan kan
+worden.
+
+	In de hoogte verplaatsbaar via het 'verplaatsicon' (slepen) als
+	het 'toolicon' (instellen) op het begin van de bank (x=0). Elke
+	richtingsverandering en verplaatsing die langer dan een halve
+	seconde standhoudt wordt gelogd.
+
+	Richting van de lichtstraal veranderbaar zowel via
+	'hoeksleepicon' (slepen) als via "toolicon' (instellen) als via
+	'hoekmeeticon' en 'toolicon' (instellen). Manier van veranderen
+	en hoek wordt gelogd.
+
+- 4 dikke sferische lenzen (dubbelbol, f=5; platbol, f=10; dubbelhol,
+f=-5; plathol, f=-10). Vorm is zichtbaar maar ze fungeren als ideale
+lenzen.
+
+	Verplaatsbaar via 'verplaatsicon' (slepen) en via 'toolicon'
+	(instellen).  Midden van de lens is op y=0 gezet. Elke
+	verplaatsing die langer dan een halve seconde standhoudt alsmede
+	een richtingsverandering wordt gelogd.
+
+	Restrictie: er kan slechts één lens tegelijk op de bank staan in
+	deze fase om het niet te moeilijk te maken voor de beginners in
+	optica. We presenteren slechts vier niveaus van de
+	brandpuntsafstand om het de leerlingen niet te moeilijk te
+	maken.
+
+- Digitale meetlat om hoek te meten
+
+	Via een 'hoekmeeticon' kan de hoek opgevraagd worden van de
+	inkomende en uittredende straal met de hoofdas. Meten wordt
+	gelogd plus de waarde.
+
+- Digitale meetlat om in de x-richting te meten
+
+	Via de muis kunnen verticale stippellijnen op de bank gezet
+	worden. Via een 'meeticon' kan de afstand tussen die twee lijnen
+	in de x-richting opgevraagd worden. X-coordinaten van meetlijnen
+	worden gelogd. Meten wordt gelogd plus de waarde.
+
+D. Instelvariabelen leeromgeving
+
+1. Hoek van inval
+
+2. Vorm van de lens
+
+3. Voorwerpsafstand (van lichtbron tot de lens)(irrelevant)
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Hoek van breking
+
+2. Plaats waar de straal de x-as snijdt
+
+F. Te ontdekken regels
+
+1. Kwalitatief: bij een dubbelbolle en een platbolle lens breekt een
+opvallende lichtstraal (twee maal) naar de hoofdas toe, bij een
+dubbelholle en platholle lens breekt een opvallende lichtstraal van de
+hoofdas af. Stralen langs de hoofdas door het midden van de lens breken
+niet.
+
+2. Kwantitatief: de dubbelbolle lens breekt twee keer zo sterk als de
+platbolle lens; de dubbelholle lens breekt twee keer zo sterk als de
+platholle lens.
+
+
+
+
+
+Fase 2
+
+In fase 2 wordt de overstap gemaakt naar dunne sferische lenzen en wordt
+de brandpuntsafstand geïntroduceerd.
+
+A. Theorie:
+
+Als een bundel lichtstralen evenwijdig aan de hoofdas op een positieve
+lens valt dan blijkt dat de uittredende lichtstralen door één punt op de
+hoofdas gaan. Dit wordt een brandpunt van de lens genoemd. De
+brandpuntsafstand is de afstand van de lens tot het brandpunt.
+
+Negatieve lenzen hebben ook een brandpunt. Als een bundel lichtstralen
+evenwijdig aan de hoofdas op een negatieve lens valt dan gaan de
+uittredende stralen niet door één punt maar lijkt het alsof de
+uittredende lichtstralen uit één punt op de hoofdas komen.
+
+
+
+De lenzen die we in deze fase bekijken zijn zogenaamde dunne lenzen van
+hooguit enkele milimeters. Deze worden hier voorgesteld als een dikke
+streep. Een belangrijke eigenschap van dunne lenzen is dat een
+lichtstraal gericht op het midden van de lens ongebroken doorgaat,
+d.w.z. niet van richting verandert.
+
+
+
+In fase 2 is tevens een tweede lichtbron beschikbaar. Deze geeft twee
+smalle lichtbundels die evenwijdig aan elkaar lopen.
+
+B. Opdracht:
+
+Probeer door het uitvoeren van experimenten te achterhalen wat de
+verschillen zijn tussen de dunne lenzen A, B en C. Welke principes kun
+je vinden?
+
+C. Experimenteerobjecten
+
+- Optische bank (als in fase 1)
+
+- Draaibaar lampje met één lichtstraal (als in fase 1)
+
+- Draaibaar lampje met twee evenwijdige lichtstralen, manipuleerbaar als
+het andere lampje. Beginhoek is 80 graden.
+
+- Twee positieve en één negatieve dunne sferische lenzen A (f=2), B
+(f=4) en C (f=-4), afgebeeld via een dikke streep zodat vorm van de
+lenzen niet zichtbaar is. Verplaatsbaar als lenzen uit fase 1. Loggen
+als in fase 1.
+
+	Restrictie: er kan slechts één lens tegelijk op de bank staan in
+	deze fase om het niet te moeilijk te maken voor de beginners in
+	optica. We presenteren slechts drie niveaus van de
+	brandpuntsafstand om het de leerlingen niet te moeilijk te
+	maken.
+
+- Digitale meetlat om hoek te meten (als in fase 1)
+
+- Digitale meetlat om in de x-richting te meten (als in fase 1)
+
+- Mogelijkheid tot het trekken van hulplijnen (bijvoorbeeld het
+verlengen van uittredende stralen bij negatieve lens)
+
+D. Instelvariabelen leeromgeving
+
+1. Hoek van inval
+
+2. Lens A, B of C
+
+3. Voorwerpsafstand (van lichtbron tot de lens)(irrelevant)
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Hoek van breking
+
+2. Plaats waar de straal de x-as snijdt
+
+F. Te ontdekken regels
+
+1. Kwalitatief: Lens A en B zijn positieve lenzen, lens C is een
+negatieve lens
+
+2. Kwantitatief: Brandpuntsafstand van lens A is twee keer zo klein als
+die van lens B. Achterhalen van de precieze brandpuntsafstanden van de
+drie lenzen.
+
+
+
+Fase 3
+
+A. Gepresenteerde theorie
+
+Met lenzen kun je beelden vormen van voorwerpen. Voorbeelden hiervan
+zijn fotocamera's en diaprojectors, die voorwerpen uit de werkelijkheid
+afbeelden.
+
+
+
+In deze fase gebruiken we als voorwerp een lampje met een divergerende
+lichtbundel. In tegenstelling tot de lampjes uit fase 1 en 2 gaan de
+lichtstralen van dit lampje verschillende kanten op.  We noemen zo'n
+lampje een puntbron. De stralen van dit lampje zijn weergegeven door
+drie dunne lijnen.
+
+B. Opdracht
+
+Probeer door het uitvoeren van experimenten te achterhalen wat de
+verschillen zijn tussen de dunne lenzen A, B en C als een divergerende
+lichtbundel op de lens valt. Welke principes kun je vinden?
+
+C. Experimenteerobjecten
+
+- Optische bank, onverplaatsbaar als in fase 1. De bank bevat nu een
+onverplaatsbare lamp met divergerende bundel.
+
+- Dunne sferische lenzen A, B en C
+
+	De manipulatiemogelijkheden zijn als in fase 2.
+
+- Digitale meetlat om in x-richting te meten (als in fase 1)
+
+- Draaibaar divergerend lampje met drie lichtstralen (manipuleerbaar als
+lampje in fase 1)
+
+- Mogelijkheid tot het trekken van hulplijnen (bijvoorbeeld het
+verlengen van uittredende stralen bij negatieve lens)
+
+D. Instelvariabelen leeromgeving
+
+1. Lens A, B of C
+
+2. Voorwerpsafstand
+
+3. Divergerend lampje
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Lineaire vergroting
+
+2. Beeldsafstand
+
+F. Te ontdekken regels
+
+1. Kwalitatief: Een negatieve lens heeft een virtueel beeld
+(divergerende uittredende stralen), een positieve lens heeft soms een
+reeel beeld (convergerende stralen) en soms een virtueel beeld
+
+2. Kwantitatief: Vergroting N = |b/v| (impliciet omdat je niet verticaal
+kan meten)
+
+3. Kwantitatief: als bij een positieve lens v > 2f dan is het beeld
+reeel, omgekeerd, verkleind; als v = 2f is het beeld reeel, omgekeerd en
+even groot; als f < v < 2f dan is het beeld reeel, omgekeerd, vergroot;
+als v < f dan is het beeld virtueel, niet omgekeerd en vergroot;
+
+
+
+Fase 4
+
+A. Gepresenteerde theorie
+
+In dit onderdeel gebruiken we als voorwerp een metalen plaatje met
+gaatjes in de vorm van een 'L', die vanaf de linkerkant wordt belicht
+door een krachtige lichtbron. De gaatjes in de metalen plaat kun je
+daardoor opvatten als afzonderlijke puntbronnen. Ook hier is er geen
+sprake van evenwijdige lichtstralen maar van puntbronnen die alle kanten
+op schijnen.
+
+
+
+Via een lens kunnen deze lichtbronnen afgebeeld worden op een scherm. De
+afstand van de het voorwerp tot de lens wordt voorwerpsafstand genoemd.
+De afstand van het beeld tot de lens wordt beeldsafstand genoemd
+
+B. Opdracht
+
+Probeer door het uitvoeren van experimenten te achterhalen wat de
+samenhang is tussen brandpuntsafstand, voorwerpsafstand en beeldsafstand
+voor de lenzen A en B. Welke principes kun je vinden?
+
+C. Experimenteerobjecten
+
+- Optische bank, met een krachtige lichtbron.
+
+- Dunne sferische lenzen A en B als in fase 3.
+
+- Voorwerp, metalen plaatje met gaatjes in de vorm van een 'L'
+
+	Verplaatsbaar via 'verplaatsicon' (slepen) en 'toolicon'
+	(instellen) op de x-as. Midden van het voorwerp moet op y=0
+	worden gezet. Elke verplaatsing die langer dan een halve seconde
+	standhoudt alsmede een richtingsverandering wordt gelogd.
+
+	Het is mogelijk via een knop de afstand tussen twee stippen van
+	de letter 'L' te meten. Wordt ook gelogd, plus de gemeten
+	waarde.
+
+- Beeldscherm
+
+	Verplaatsbaar via 'verplaatsicon' op de x-as (slepen) en via
+	'toolicon' (instellen). Midden van het scherm moet op y=0 worden
+	gezet. Elke verplaatsing die langer dan een halve seconde
+	standhoudt en elke verandering van richting wordt gelogd.
+
+	Om scherp stellen te vergemakkelijken kan tijdens het tonen van
+	het scherm het scherm wel bewogen worden en wordt er gelogd als
+	het scherm een bepaalde tijd (bijvoorbeeld een halve seconde)
+	stilstaat of als er van richting veranderd wordt.
+
+- Digitale meetlat om in x-richting te meten, als in fase 1.
+
+D. Instelvariabelen leeromgeving
+
+1. Lens A en B.
+
+2. Voorwerpsafstand
+
+3. Plaats van het beeldscherm
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Lineaire vergroting
+
+2. Beeldsafstand
+
+F. Te ontdekken regels
+
+1. Kwantitatief: 1/v +1/b = 1/f
+
+2. Kwantitatief: N = |b/v|
+
+3. Kwantitatief: als bij een positieve lens v > 2f dan is het beeld
+reeel, omgekeerd, verkleind; als v = 2f is het beeld reeel, omgekeerd en
+even groot; als f < v < 2f dan is het beeld reeel, omgekeerd, vergroot;
+als v < f dan geen reeel beeld;
+
+
+
+Fase 5
+
+A. Theorie:
+
+In fase 5 gebruiken we opnieuw de letter 'L' als voorwerp. Je hebt voor
+het experimenteren de drie lenzen A, B en C tot je beschikking.
+
+
+
+In deze fase is het ook mogelijk om vanaf de rechterkant in de lens te
+kijken.
+
+B. Opdracht:
+
+Probeer door het uitvoeren van experimenten te achterhalen wat de
+samenhang is tussen brandpuntsafstand, voorwerp en afbeelding voor de
+lenzen A, B en C. Welke principes kun je vinden?
+
+C. Experimenteerobjecten
+
+- Optische bank, als in fase 4.
+
+- Dunne sferische lenzen A, B en C als in fase 3. Wat toegevoegd wordt
+is de mogelijkheid om via een het aanklikken van het 'oogicon' vanaf de
+rechterkant in de lens te kijken, om het virtuele beeld te zien.
+
+- Voorwerp, de letter 'L' (als in fase 4).
+
+- Beeldscherm (als in fase 4).
+
+- Digitale meetlat om in x-richting te meten, als in fase 1.
+
+D. Instelvariabelen leeromgeving
+
+1. Lens A, B of C
+
+2. Voorwerpsafstand
+
+3. Plaats van het beeldscherm
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Lineaire vergroting
+
+2. Beeldsafstand
+
+F. Te ontdekken regels
+
+1. Kwantitatief: 1/v +1/b = 1/f (ook voor negatieve lens)
+
+2. Kwantitatief: N = |b/v|
+
+3. Kwantitatief: als bij een positieve lens v > 2f dan is het beeld
+reeel, omgekeerd, verkleind; als v = 2f is het beeld reeel, omgekeerd en
+even groot; als f < v < 2f dan is het beeld reeel, omgekeerd, vergroot;
+als v < f dan is het beeld virtueel, niet omgekeerd en vergroot;
+
+
+
+Fase 6
+
+A. Theorie
+
+Tot nu toe hebben we telkens gekeken naar licht door één lens tegelijk.
+Het is natuurlijk mogelijk om meerdere lenzen achter elkaar te zetten en
+een voorwerp via twee lenzen af te beelden. In deze fase gebruiken we
+als voorwerp weer het lampje met een divergerende lichtbundel, waarvan
+de lichtstralen verschillende kanten opgaan.
+
+B. Opdracht
+
+Probeer door het uitvoeren van experimenten te achterhalen hoe beelden
+gevormd worden als je twee positieve lenzen achter elkaar zet. Welke
+principes kun je ontdekken?
+
+C. Experimenteerobjecten
+
+- Optische bank, als in fase 3
+
+- Twee dunne sferische lenzen D (f=1) en E (f=2). De brandpunten zijn
+dusdanig gekozen dat de bank van 20 centimeter lang genoeg is om een
+afbeelding via twee lenzen te krijgen. Verplaatsen en loggen als bij de
+andere lenzen.
+
+- Draaibaar divergerend lampje met drie lichtstralen (manipuleerbaar als
+lampje in fase 1)
+
+- Digitale meetlat om in x-richting te meten, als in fase 1.
+
+- Mogelijkheid tot het trekken van hulplijnen (bijvoorbeeld het
+verlengen van uittredende stralen bij negatieve lens)
+
+D. Instelvariabelen leeromgeving
+
+1. Lens D en E.
+
+2. Voorwerpsafstand
+
+3. Divergerend lampje
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Lineaire vergroting
+
+2. Beeldsafstand
+
+F. Te ontdekken regels
+
+1. Kwalitatief: Het beeld van de ene lens fungeert als voorwerp voor de
+volgende lens.
+
+
+
+Fase 7
+
+A. Gepresenteerde theorie
+
+Ook in deze fase is het mogelijk om meerdere lenzen achter elkaar te
+zetten en een voorwerp via twee lenzen af te beelden. We gebruiken als
+voorwerp weer het metalen plaatje met gaatjes in de vorm van een 'L'
+
+B. Opdracht
+
+Probeer door het uitvoeren van experimenten te achterhalen hoe beelden
+gevormd worden als je twee positieve lenzen achter elkaar zet. Welke
+principes kan je ontdekken?
+
+C. Experimenteerobjecten
+
+- Optische bank, als in fase 4
+
+- Twee dunne sferische lenzen D en E, als in fase 6. Er kan in de lens
+gekeken worden
+
+- Voorwerp, de letter 'L' , als in fase 3.
+
+- Beeldscherm, als in fase 3.
+
+- Digitale meetlat om breedte te meten, als in fase 3.
+
+D. Instelvariabelen leeromgeving
+
+1. Lens D en E.
+
+2. Voorwerpsafstand
+
+3. Plaats van het beeldscherm
+
+E. Afhankelijke variabelen leeromgeving
+
+1. Lineaire vergroting
+
+2. Beeldsafstand
+
+F. Te ontdekken regels
+
+1. Kwalitatief: Het beeld van de ene lens fungeert als voorwerp voor de
+volgende lens.
+
+2. Kwantitatief: Totale vergroting is een vermenigvuldiging van de twee
+afzonderlijke vergrotingen.
+
+
+
+NB: Over de weergave van het virtueel beeld in de fasen 5 en 7 wordt nog
+overleg gevoerd tussen Jan, Wouter en Frans.
+
+
+

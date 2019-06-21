@@ -1,0 +1,2338 @@
+/*  Log file created by optica simulation
+    Date: Fri Sep 19 09:38:25 1997
+*/
+
+%% Header
+pp('01').
+epoch(874654705.0).
+%% End Header
+
+@(51.0 - 52.0, view(theory, [])).
+@(52.0 - 52.0, view(assignment, [])).
+@(56.0,
+  quit('fase 1',
+       state(state, '',
+	     [ l1 = biglamp(read_only(true))
+	     ]))).
+/*  Log file created by optica simulation
+    Date: Fri Sep 26 09:18:07 1997
+*/
+
+%% Header
+pp('01').
+epoch(875258287.0).
+%% End Header
+
+@(8.0, experiment(open('fase 1'))).
+@(71.0 - 85.0,
+  view(assignment,
+       [ @(0.0, action(assignment_viewer))
+       ])).
+@(95.0, mode(puntbron)).
+@(98.0,
+  add(l1 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(0.05),
+		 pos_y(-0.85),
+		 instrument_name(puntbron)))).
+@(103.0, mode(delete)).
+@(104.0, delete(l1)).
+@(118.0, mode('f-10')).
+@(178.0, mode(rotlamp)).
+@(196.0, mode(scherm)).
+@(198.0,
+  add(s1 = shield(pos_x(5.3),
+		  unit(1),
+		  instrument_name(scherm)))).
+@(204.0, mode(vangscherm)).
+@(209.0,
+  add(s2 = shield2(pos_x(30.3),
+		   instrument_name(vangscherm)))).
+@(215.0, mode(puntbron)).
+@(219.0,
+  add(l2 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(0.2),
+		 pos_y(0.05),
+		 instrument_name(puntbron)))).
+@(225.0, mode(oog)).
+@(227.0, add(e1 = eye(pos_x(30.2), instrument_name(oog)))).
+@(238.0 - 262.0, tool(s2, [])).
+@(268.0, mode(delete)).
+@(273.0, delete(e1)).
+@(282.0, mode(protractor)).
+@(290.0, mode(protractor)).
+@(301.0,
+  add(a1 = protractor(path('l2-beam1'),
+		      segment(1),
+		      location(3.7)))).
+@(301.0 - 307.0, tool(a1, [])).
+@(315.0, mode(rotlamp)).
+@(317.0 - 325.0,
+  rotate(l2,
+	 [ @(0.0, drag(0)),
+	   @(6.0, drag(-5.2739)),
+	   @(6.0, drag(5.2739)),
+	   @(7.0, drag(0))
+	 ])).
+@(330.0, mode(protractor)).
+@(333.0 - 347.0, tool(a1, [])).
+@(350.0 - 353.0, tool(a1, [])).
+@(360.0, mode(f5)).
+@(363.0,
+  add(m1 = lens(label(''),
+		radius(5),
+		thickness(0),
+		focal_distance(5),
+		sfere_left(20),
+		sfere_right(20),
+		breaking_index(1.51),
+		pos_x(14.4),
+		show_gauge(false),
+		instrument_name(f5)))).
+@(372.0, mode('f-10')).
+@(380.0, mode(xmove)).
+@(384.0 - 423.0,
+  move(s2, x,
+       [ @(0.0, drag(27.25)),
+	 @(1.0, drag(23.5)),
+	 @(3.0, drag(21.45)),
+	 @(3.0, drag(21.95)),
+	 @(7.0, drag(22)),
+	 @(7.0, drag(20.35)),
+	 @(8.0, drag(18.35)),
+	 @(9.0, drag(14.95)),
+	 @(10.0, drag(14.4)),
+	 @(11.0, drag(14.25)),
+	 @(12.0, drag(10)),
+	 @(13.0, drag(7.8)),
+	 @(14.0, drag(7.5)),
+	 @(15.0, drag(4.3)),
+	 @(15.0, drag(4.45)),
+	 @(16.0, drag(4.9)),
+	 @(17.0, drag(4.95)),
+	 @(18.0, drag(5)),
+	 @(18.0, drag(4)),
+	 @(20.0, drag(0)),
+	 @(20.0, drag(31.45)),
+	 @(20.0, drag(29.85)),
+	 @(22.0, drag(26.1)),
+	 @(23.0, drag(26.95)),
+	 @(24.0, drag(27.7)),
+	 @(24.0, drag(27.15)),
+	 @(26.0, drag(26.55)),
+	 @(28.0, drag(26.5)),
+	 @(29.0, drag(26.9)),
+	 @(29.0, drag(26.85)),
+	 @(32.0, drag(26.45)),
+	 @(33.0, drag(26.3)),
+	 @(34.0, drag(25.8)),
+	 @(35.0, drag(25.65)),
+	 @(36.0, drag(25.5))
+       ])).
+@(434.0 - 447.0,
+  move(m1, x,
+       [ @(0.0, drag(13.1)),
+	 @(2.0, drag(12.85)),
+	 @(3.0, drag(8.8)),
+	 @(4.0, drag(2.8)),
+	 @(5.0, drag(2.7)),
+	 @(7.0, drag(0)),
+	 @(9.0, drag(1.15)),
+	 @(10.0, drag(0)),
+	 @(11.0, drag(0.55)),
+	 @(11.0, drag(0.2)),
+	 @(11.0, drag(2.75)),
+	 @(12.0, drag(4.75)),
+	 @(12.0, drag(3.9)),
+	 @(13.0, drag(3.8))
+       ])).
+@(451.0 - 468.0,
+  move(s2, x,
+       [ @(0.0, drag(11.5)),
+	 @(1.0, drag(10.5)),
+	 @(2.0, drag(5.55)),
+	 @(3.0, drag(5.5)),
+	 @(4.0, drag(4.6)),
+	 @(5.0, drag(5.5)),
+	 @(6.0, drag(6.2)),
+	 @(7.0, drag(8.6)),
+	 @(7.0, drag(6.75)),
+	 @(8.0, drag(6)),
+	 @(9.0, drag(5.6)),
+	 @(10.0, drag(5.55)),
+	 @(11.0, drag(5.35)),
+	 @(12.0, drag(5.2)),
+	 @(13.0, drag(5.15)),
+	 @(13.0, drag(5.25)),
+	 @(14.0, drag(5.35)),
+	 @(16.0, drag(33.3)),
+	 @(16.0, drag(25.8)),
+	 @(17.0, drag(25.75))
+       ])).
+@(472.0 - 479.0,
+  move(s1, x,
+       [ @(0.0, drag(6.75)),
+	 @(2.0, drag(6.8)),
+	 @(3.0, drag(22.4)),
+	 @(4.0, drag(18.15)),
+	 @(5.0, drag(10.4)),
+	 @(6.0, drag(8.25)),
+	 @(7.0, drag(7.8))
+       ])).
+@(483.0 - 510.0,
+  move(m1, x,
+       [ @(0.0, drag(8.55)),
+	 @(1.0, drag(16.15)),
+	 @(2.0, drag(18.2)),
+	 @(3.0, drag(18.95)),
+	 @(3.0, drag(18.45)),
+	 @(4.0, drag(16.65)),
+	 @(5.0, drag(15.5)),
+	 @(6.0, drag(15.25)),
+	 @(7.0, drag(13.3)),
+	 @(8.0, drag(13.15)),
+	 @(8.0, drag(13.4)),
+	 @(9.0, drag(13.6)),
+	 @(9.0, drag(12.1)),
+	 @(10.0, drag(13.9)),
+	 @(12.0, drag(13.95)),
+	 @(14.0, drag(21.35)),
+	 @(14.0, drag(20.7)),
+	 @(15.0, drag(17.85)),
+	 @(17.0, drag(16.75)),
+	 @(18.0, drag(15.25)),
+	 @(19.0, drag(14.6)),
+	 @(20.0, drag(14.5)),
+	 @(20.0, drag(14.9)),
+	 @(22.0, drag(15.4)),
+	 @(23.0, drag(18.6)),
+	 @(24.0, drag(18.65)),
+	 @(25.0, drag(15.6)),
+	 @(26.0, drag(14.8)),
+	 @(27.0, drag(15.15))
+       ])).
+@(512.0 - 515.0,
+  move(s2, x,
+       [ @(0.0, drag(23.65)),
+	 @(1.0, drag(31.2)),
+	 @(2.0, drag(30.75))
+       ])).
+@(520.0, mode(ruler)).
+@(531.0, add(d1 = ruler(from(s2), to(m1), pos_y(-0.1)))).
+@(541.0, add(d2 = ruler(from(m1), to(s1), pos_y(-0.1)))).
+@(552.0, mode(xmove)).
+@(561.0 - 563.0,
+  move(m1, x,
+       [ @(0.0, drag(15.85)),
+	 @(1.0, drag(15.45)),
+	 @(2.0, drag(15.25))
+       ])).
+@(565.0 - 570.0,
+  move(m1, x,
+       [ @(0.0, drag(13.6)),
+	 @(1.0, drag(13.55)),
+	 @(1.0, drag(15)),
+	 @(4.0, drag(15.1)),
+	 @(4.0, drag(15))
+       ])).
+@(576.0, mode(tool)).
+@(577.0, mode(tool)).
+@(577.0, mode(tool)).
+@(581.0 - 609.0,
+  tool(d2,
+       [ @(23.0, tool(varname, '0'))
+       ])).
+@(621.0 - 664.0,
+  tool(d2,
+       [ @(30.0, tool(varname, '1')),
+	 @(40.0, tool(value, 7.5))
+       ])).
+@(681.0, mode('f-10')).
+@(692.0, mode(xmove)).
+@(694.0 - 781.0,
+  move(s1, x,
+       [ @(0.0, drag(7.55)),
+	 @(1.0, drag(3.45)),
+	 @(3.0, drag(1.05)),
+	 @(3.0, drag(1.8)),
+	 @(4.0, drag(6.55)),
+	 @(5.0, drag(12.05)),
+	 @(5.0, drag(6.1)),
+	 @(8.0, drag(8.95)),
+	 @(8.0, drag(7.45)),
+	 @(9.0, drag(7.1)),
+	 @(9.0, drag(7.15)),
+	 @(10.0, drag(7.25)),
+	 @(11.0, drag(9.8)),
+	 @(11.0, drag(9.65)),
+	 @(12.0, drag(8.7)),
+	 @(13.0, drag(7.6)),
+	 @(14.0, drag(7.55)),
+	 @(15.0, drag(7.2)),
+	 @(15.0, drag(7.35)),
+	 @(19.0, drag(7.5)),
+	 @(20.0, drag(7.55)),
+	 @(21.0, drag(7.6)),
+	 @(23.0, drag(7.7)),
+	 @(25.0, drag(7.75)),
+	 @(26.0, drag(8.1)),
+	 @(26.0, drag(7.9)),
+	 @(27.0, drag(7.5)),
+	 @(30.0, drag(7.75)),
+	 @(32.0, drag(7.6)),
+	 @(35.0, drag(7.7)),
+	 @(35.0, drag(7.6)),
+	 @(36.0, drag(7.75)),
+	 @(36.0, drag(7.2)),
+	 @(38.0, drag(7.05)),
+	 @(38.0, drag(7.1)),
+	 @(39.0, drag(7.5)),
+	 @(44.0, drag(8.6)),
+	 @(44.0, drag(8.5)),
+	 @(46.0, drag(7.4)),
+	 @(47.0, drag(7.1)),
+	 @(53.0, drag(8.3)),
+	 @(54.0, drag(8.2)),
+	 @(60.0, drag(7.65)),
+	 @(64.0, drag(7.6)),
+	 @(66.0, drag(9.85)),
+	 @(66.0, drag(9.8)),
+	 @(68.0, drag(9.35)),
+	 @(71.0, drag(9.2)),
+	 @(73.0, drag(8.75)),
+	 @(73.0, drag(8.8)),
+	 @(75.0, drag(9.35)),
+	 @(75.0, drag(9.25)),
+	 @(76.0, drag(8.6)),
+	 @(77.0, drag(8.05)),
+	 @(78.0, drag(7.4)),
+	 @(79.0, drag(7.35)),
+	 @(79.0, drag(7.45)),
+	 @(80.0, drag(7.75)),
+	 @(81.0, drag(7.8)),
+	 @(82.0, drag(7.7)),
+	 @(83.0, drag(7.6)),
+	 @(83.0, drag(7.7)),
+	 @(85.0, drag(7.8)),
+	 @(85.0, drag(7.7))
+       ])).
+@(793.0 - 795.0,
+  move(s2, x,
+       [ @(1.0, drag(30.45)),
+	 @(1.0, drag(30.8))
+       ])).
+@(800.0, mode(ruler)).
+@(807.0, add(d3 = ruler(from(m1), to(s1), pos_y(-0.1)))).
+@(853.0, mode(ruler)).
+@(861.0, add(d4 = ruler(from(s2), to(m1), pos_y(-0.2)))).
+@(890.0, mode(tool)).
+@(896.0 - 916.0,
+  tool(d3,
+       [ @(9.0, tool(value, 7.5))
+       ])).
+@(934.0 - 945.0, tool(d3, [])).
+@(951.0,
+  measured([ d2(7.5)
+	   ])).
+@(951.0, action(show_gauges)).
+@(963.0 - 972.0,
+  tool(d2,
+       [ @(7.0, tool(varname, '0'))
+       ])).
+@(975.0 - 978.0, tool(d4, [])).
+@(989.0, action(delete_all)).
+@(995.0, mode(bolf5)).
+@(995.0,
+  experiment(close('fase 1', 987, 1043,
+		   state(state, '',
+			 [ l1 = biglamp(read_only(true))
+			 ])))).
+@(996.0, experiment(open('fase 2'))).
+@(996.0 - 1009.0, view(theory, [])).
+@(1009.0 - 1014.0, view(assignment, [])).
+@(1016.0, mode(f5)).
+@(1016.0, experiment(close('fase 2', 20, 20, state(state, '', [])))).
+@(1016.0, experiment(open('fase 1'))).
+@(1035.0, mode('f-10')).
+@(1036.0,
+  add(m2 = lens(label(''),
+		radius(5),
+		thickness(0.5),
+		focal_distance(-10),
+		sfere_left(-10),
+		sfere_right(-10),
+		breaking_index(1.51),
+		pos_x(9.85),
+		show_gauge(false),
+		instrument_name('f-10')))).
+@(1039.0, mode(dotruler)).
+@(1046.0, mode(vangscherm)).
+@(1053.0,
+  add(s3 = shield2(pos_x(25.85),
+		   instrument_name(vangscherm)))).
+@(1056.0, mode(scherm)).
+@(1058.0,
+  add(s4 = shield(pos_x(3.95),
+		  unit(1),
+		  instrument_name(scherm)))).
+@(1067.0, mode(xmove)).
+@(1071.0 - 1079.0,
+  move(s4, x,
+       [ @(0.0, drag(5.45)),
+	 @(1.0, drag(8.95)),
+	 @(2.0, drag(24.7)),
+	 @(3.0, drag(19.45)),
+	 @(3.0, drag(19.5)),
+	 @(4.0, drag(29.05)),
+	 @(5.0, drag(29.2)),
+	 @(5.0, drag(27.05)),
+	 @(7.0, drag(0)),
+	 @(7.0, drag(1.85)),
+	 @(8.0, drag(3.65))
+       ])).
+@(1083.0 - 1084.0,
+  move(m2, x,
+       [ @(0.0, drag(13.75)),
+	 @(1.0, drag(13.8))
+       ])).
+@(1085.0, mode(puntbron)).
+@(1087.0,
+  add(l3 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(0.1),
+		 pos_y(-0.3),
+		 instrument_name(puntbron)))).
+@(1089.0, mode(protractor)).
+@(1095.0, mode(rotlamp)).
+@(1096.0 - 1107.0,
+  rotate(l3,
+	 [ @(0.0, drag(6.34019)),
+	   @(1.0, drag(5.07961)),
+	   @(3.0, drag(-1.27303)),
+	   @(4.0, drag(2.5448)),
+	   @(7.0, drag(-1.27303)),
+	   @(10.0, drag(1.27303))
+	 ])).
+@(1109.0, mode(delete)).
+@(1112.0, delete(l3)).
+@(1114.0, mode(puntbron)).
+@(1118.0,
+  add(l4 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(0.2),
+		 pos_y(0.05),
+		 instrument_name(puntbron)))).
+@(1121.0, mode(rotlamp)).
+@(1122.0 - 1126.0,
+  rotate(l4,
+	 [ @(0.0, drag(45.971)),
+	   @(1.0, drag(-1.78991)),
+	   @(1.0, drag(0))
+	 ])).
+@(1134.0, mode(ymove)).
+@(1139.0, mode(xmove)).
+@(1141.0 - 1147.0,
+  move(s4, x,
+       [ @(0.0, drag(7.25)),
+	 @(1.0, drag(15.45)),
+	 @(2.0, drag(21.55)),
+	 @(3.0, drag(23.15)),
+	 @(3.0, drag(16.8)),
+	 @(4.0, drag(5.95)),
+	 @(4.0, drag(7.1))
+       ])).
+@(1149.0 - 1160.0,
+  move(s3, x,
+       [ @(0.0, drag(22.05)),
+	 @(1.0, drag(14.45)),
+	 @(1.0, drag(14.5)),
+	 @(2.0, drag(32.9)),
+	 @(3.0, drag(23.85)),
+	 @(4.0, drag(18.05)),
+	 @(5.0, drag(16.9)),
+	 @(7.0, drag(14.4)),
+	 @(8.0, drag(14.15)),
+	 @(9.0, drag(14.5)),
+	 @(10.0, drag(14.6)),
+	 @(10.0, drag(14.05)),
+	 @(11.0, drag(14)),
+	 @(11.0, repositioned(14.6))
+       ])).
+@(1163.0 - 1176.0,
+  move(s4, x,
+       [ @(4.0, drag(7.85)),
+	 @(6.0, drag(20.75)),
+	 @(6.0, drag(18.25)),
+	 @(7.0, drag(10.8)),
+	 @(8.0, drag(8.95)),
+	 @(10.0, drag(15.2)),
+	 @(10.0, drag(0.15)),
+	 @(10.0, drag(16.9)),
+	 @(10.0, drag(4.5)),
+	 @(10.0, drag(6.4)),
+	 @(11.0, drag(24.9)),
+	 @(11.0, drag(2.65)),
+	 @(12.0, drag(5.45))
+       ])).
+@(1189.0, action(calculator)).
+@(1191.0, action(save)).
+@(1208.0 - 1223.0,
+  notebook([ @(0.0, action(notebook))
+	   ])).
+@(1225.0 - 1226.0,
+  move(s3, x,
+       [ @(0.0, drag(21.45))
+       ])).
+@(1229.0 - 1289.0,
+  notebook([ @(0.0, action(notebook)),
+	     @(60.0,
+	       note('note-1', 'de HL buig ...', 'fase 1',
+		    'de HL buigt de stalen uiteen er is geen BP',
+		    state(state, '',
+			  [ l1 = biglamp(read_only(true)),
+			    m2 = lens(label(''),
+				      radius(5),
+				      thickness(0.5),
+				      focal_distance(-10),
+				      sfere_left(-10),
+				      sfere_right(-10),
+				      breaking_index(1.51),
+				      pos_x(13.8),
+				      show_gauge(false),
+				      instrument_name('f-10')),
+			    s3 = shield2(pos_x(21.45),
+					 instrument_name(vangscherm)),
+			    s4 = shield(pos_x(5.45),
+					unit(1),
+					instrument_name(scherm)),
+			    l4 = lamp3(switch(true),
+				       angle(0),
+				       divergence(5),
+				       pos_x(0.2),
+				       pos_y(0.05),
+				       instrument_name(puntbron))
+			  ])))
+	   ])).
+@(1295.0, mode(delete)).
+@(1297.0, delete(m2)).
+@(1299.0, mode(f10)).
+@(1301.0,
+  add(m3 = lens(label(''),
+		radius(5),
+		thickness(0),
+		focal_distance(10),
+		sfere_left(10),
+		sfere_right(10),
+		breaking_index(1.51),
+		pos_x(14.25),
+		show_gauge(false),
+		instrument_name(f10)))).
+@(1319.0, mode(rotlamp)).
+@(1320.0, mode(xmove)).
+@(1322.0 - 1345.0,
+  move(m3, x,
+       [ @(0.0, drag(10.5)),
+	 @(1.0, drag(6.7)),
+	 @(2.0, drag(6.55)),
+	 @(2.0, drag(6.95)),
+	 @(3.0, drag(20)),
+	 @(4.0, drag(22.8)),
+	 @(5.0, drag(22.75)),
+	 @(6.0, drag(21.9)),
+	 @(6.0, drag(27.5)),
+	 @(9.0, drag(37.5)),
+	 @(9.0, drag(16.2)),
+	 @(10.0, drag(12.4)),
+	 @(11.0, drag(14.9)),
+	 @(11.0, drag(8.6)),
+	 @(13.0, drag(14.1)),
+	 @(13.0, drag(13.3)),
+	 @(16.0, drag(0)),
+	 @(16.0, drag(0.3)),
+	 @(21.0, drag(37.5)),
+	 @(21.0, drag(16.4)),
+	 @(22.0, drag(12))
+       ])).
+@(1353.0 - 1354.0,
+  move(m3, x,
+       [ @(0.0, drag(6.35))
+       ])).
+@(1363.0 - 1364.0,
+  move(m3, x,
+       [ @(0.0, drag(17.4))
+       ])).
+@(1367.0 - 1369.0,
+  move(s3, x,
+       [ @(0.0, drag(21.75)),
+	 @(1.0, drag(33.3))
+       ])).
+@(1374.0 - 1375.0,
+  move(s3, x,
+       [ @(1.0, drag(33.3))
+       ])).
+@(1388.0 - 1389.0,
+  move(s3, x,
+       [ @(1.0, drag(33.3))
+       ])).
+@(1391.0, mode(f5)).
+@(1399.0 - 1517.0,
+  notebook([ @(0.0, action(notebook)),
+	     @(118.0,
+	       note('note-2', 'deze ZBL h ...', 'fase 1',
+		    'deze ZBL heeft een BP buiten het beeld hij buigt de stralen naar elkaar toe',
+		    state(state, '',
+			  [ l1 = biglamp(read_only(true)),
+			    s3 = shield2(pos_x(33.3),
+					 instrument_name(vangscherm)),
+			    s4 = shield(pos_x(5.45),
+					unit(1),
+					instrument_name(scherm)),
+			    l4 = lamp3(switch(true),
+				       angle(0),
+				       divergence(5),
+				       pos_x(0.2),
+				       pos_y(0.05),
+				       instrument_name(puntbron)),
+			    m3 = lens(label(''),
+				      radius(5),
+				      thickness(0),
+				      focal_distance(10),
+				      sfere_left(10),
+				      sfere_right(10),
+				      breaking_index(1.51),
+				      pos_x(17.4),
+				      show_gauge(false),
+				      instrument_name(f10))
+			  ])))
+	   ])).
+@(1520.0, mode(f5)).
+@(1523.0, mode(delete)).
+@(1524.0, delete(m3)).
+@(1528.0, mode(f5)).
+@(1540.0, mode(f5)).
+@(1543.0,
+  add(m4 = lens(label(''),
+		radius(5),
+		thickness(0),
+		focal_distance(5),
+		sfere_left(20),
+		sfere_right(20),
+		breaking_index(1.51),
+		pos_x(16.25),
+		show_gauge(false),
+		instrument_name(f5)))).
+@(1553.0, mode(xmove)).
+@(1555.0 - 1573.0,
+  move(s3, x,
+       [ @(0.0, drag(26.8)),
+	 @(1.0, drag(24.25)),
+	 @(1.0, drag(24.45)),
+	 @(2.0, drag(24.95)),
+	 @(3.0, drag(25)),
+	 @(4.0, drag(25.05)),
+	 @(5.0, drag(28.35)),
+	 @(5.0, drag(25.25)),
+	 @(7.0, drag(25.05)),
+	 @(8.0, drag(26.9)),
+	 @(8.0, drag(24.5)),
+	 @(9.0, drag(25.3)),
+	 @(11.0, drag(25.45)),
+	 @(12.0, drag(26.6)),
+	 @(12.0, drag(26.55)),
+	 @(13.0, drag(25.9)),
+	 @(14.0, drag(25.8)),
+	 @(15.0, drag(25.7)),
+	 @(16.0, drag(25.65)),
+	 @(18.0, drag(25.55))
+       ])).
+@(1577.0 - 1788.0,
+  notebook([ @(0.0, action(notebook)),
+	     @(211.0,
+	       note('note-3', 'de SBL hee ...', 'fase 1',
+		    'de SBL heeft een BP in het beeld je kunt het scherm er op scherp stellen en de stralen worden sterker na mekaar toe gebogen als bij de ZBL',
+		    state(state, '',
+			  [ l1 = biglamp(read_only(true)),
+			    s3 = shield2(pos_x(25.55),
+					 instrument_name(vangscherm)),
+			    s4 = shield(pos_x(5.45),
+					unit(1),
+					instrument_name(scherm)),
+			    l4 = lamp3(switch(true),
+				       angle(0),
+				       divergence(5),
+				       pos_x(0.2),
+				       pos_y(0.05),
+				       instrument_name(puntbron)),
+			    m4 = lens(label(''),
+				      radius(5),
+				      thickness(0),
+				      focal_distance(5),
+				      sfere_left(20),
+				      sfere_right(20),
+				      breaking_index(1.51),
+				      pos_x(16.25),
+				      show_gauge(false),
+				      instrument_name(f5))
+			  ])))
+	   ])).
+@(1791.0, mode(bolf5)).
+@(1791.0,
+  experiment(close('fase 1', 775, 1818,
+		   state(state, '',
+			 [ l1 = biglamp(read_only(true)),
+			   s3 = shield2(pos_x(25.55),
+					instrument_name(vangscherm)),
+			   s4 = shield(pos_x(5.45),
+				       unit(1),
+				       instrument_name(scherm)),
+			   l4 = lamp3(switch(true),
+				      angle(0),
+				      divergence(5),
+				      pos_x(0.2),
+				      pos_y(0.05),
+				      instrument_name(puntbron)),
+			   m4 = lens(label(''),
+				     radius(5),
+				     thickness(0),
+				     focal_distance(5),
+				     sfere_left(20),
+				     sfere_right(20),
+				     breaking_index(1.51),
+				     pos_x(16.25),
+				     show_gauge(false),
+				     instrument_name(f5))
+			 ])))).
+@(1794.0, experiment(open('fase 2'))).
+@(1806.0 - 1813.0,
+  view(assignment,
+       [ @(0.0, action(assignment_viewer))
+       ])).
+@(1817.0, mode(rotlamp)).
+@(1825.0, mode(puntbron)).
+@(1827.0,
+  add(l5 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(-0.45),
+		 pos_y(0.1),
+		 instrument_name(puntbron)))).
+@(1830.0, mode(rotlamp)).
+@(1831.0 - 1851.0,
+  rotate(l5,
+	 [ @(1.0, drag(1.10171)),
+	   @(3.0, drag(0.367276)),
+	   @(4.0, drag(-0.367276)),
+	   @(4.0, drag(-0.362627)),
+	   @(5.0, drag(0.362627)),
+	   @(8.0, drag(-0.362627)),
+	   @(8.0, drag(0)),
+	   @(9.0, drag(0.362627)),
+	   @(10.0, drag(-0.362627)),
+	   @(11.0, drag(-0.360346)),
+	   @(12.0, drag(0.360346)),
+	   @(13.0, drag(0.358094)),
+	   @(17.0, drag(-0.358094)),
+	   @(18.0, drag(0.358094)),
+	   @(18.0, drag(0))
+	 ])).
+@(1862.0, mode(bolf5)).
+@(1864.0,
+  add(m5 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(8.75),
+		show_gauge(true),
+		instrument_name(bolf5)))).
+@(1871.0, mode(bolf10)).
+@(1872.0,
+  add(m6 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(10),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(4.5),
+		show_gauge(true),
+		instrument_name(bolf10)))).
+@(1878.0, mode('holf-5')).
+@(1880.0,
+  add(m7 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(-5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(16.95),
+		show_gauge(true),
+		instrument_name('holf-5')))).
+@(1884.0, mode('holf-10')).
+@(1885.0,
+  add(m8 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(-10),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(20.75),
+		show_gauge(true),
+		instrument_name('holf-10')))).
+@(1890.0, mode(xmove)).
+@(1892.0 - 1905.0,
+  move(m7, x,
+       [ @(0.0, drag(14.8)),
+	 @(1.0, drag(12.3)),
+	 @(2.0, drag(9.4)),
+	 @(3.0, drag(9.15)),
+	 @(3.0, drag(9.25)),
+	 @(4.0, drag(9.85)),
+	 @(5.0, drag(9.95)),
+	 @(6.0, drag(6.65)),
+	 @(7.0, drag(6.3)),
+	 @(8.0, drag(5.85)),
+	 @(9.0, drag(1.3)),
+	 @(10.0, drag(0.7)),
+	 @(11.0, drag(0.75))
+       ])).
+@(1910.0 - 1913.0,
+  move(m5, x,
+       [ @(0.0, drag(24.65)),
+	 @(1.0, drag(37)),
+	 @(1.0, drag(27.75)),
+	 @(2.0, drag(27.2)),
+	 @(2.0, drag(27.35)),
+	 @(3.0, drag(27.4))
+       ])).
+@(1919.0 - 1923.0,
+  move(m6, x,
+       [ @(1.0, drag(12.65)),
+	 @(1.0, drag(11.25)),
+	 @(2.0, drag(11.05))
+       ])).
+@(1926.0 - 1939.0,
+  move(m8, x,
+       [ @(0.0, drag(20.55)),
+	 @(1.0, drag(17.8)),
+	 @(2.0, drag(16.6)),
+	 @(3.0, drag(15.45)),
+	 @(4.0, drag(14.85)),
+	 @(5.0, drag(16.55)),
+	 @(6.0, drag(22.05)),
+	 @(9.0, drag(22.3)),
+	 @(10.0, drag(26.75)),
+	 @(11.0, drag(22.7)),
+	 @(12.0, drag(21.7))
+       ])).
+@(1946.0 - 1960.0,
+  move(m5, x,
+       [ @(0.0, drag(26.85)),
+	 @(0.0, drag(27.8)),
+	 @(1.0, drag(27.85)),
+	 @(1.0, drag(26.95)),
+	 @(5.0, drag(23.1)),
+	 @(6.0, drag(16.85)),
+	 @(7.0, drag(12.55)),
+	 @(8.0, drag(9.85)),
+	 @(9.0, drag(2.45)),
+	 @(11.0, drag(0)),
+	 @(11.0, drag(0.9)),
+	 @(13.0, drag(37)),
+	 @(13.0, drag(24.9))
+       ])).
+@(1976.0, mode('holf-10')).
+@(1978.0,
+  add(m9 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(-10),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(6.1),
+		show_gauge(true),
+		instrument_name('holf-10')))).
+@(1985.0, mode('holf-5')).
+@(1986.0,
+  add(m10 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(10.05),
+		 show_gauge(true),
+		 instrument_name('holf-5')))).
+@(1988.0, mode(bolf10)).
+@(1990.0,
+  add(m11 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(17.85),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(1992.0, mode(bolf5)).
+@(1993.0,
+  add(m12 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(28.35),
+		 show_gauge(true),
+		 instrument_name(bolf5)))).
+@(1998.0, mode(bolf10)).
+@(1999.0,
+  add(m13 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(14.1),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2004.0, mode('holf-10')).
+@(2007.0,
+  add(m14 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(16.35),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2011.0, mode(bolf10)).
+@(2012.0,
+  add(m15 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(31.55),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2015.0, mode(bolf5)).
+@(2016.0,
+  add(m16 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(36.65),
+		 show_gauge(true),
+		 instrument_name(bolf5)))).
+@(2022.0, mode(bolf10)).
+@(2023.0,
+  add(m17 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(35.25),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2028.0, mode(bolf10)).
+@(2029.0,
+  add(m18 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(19.65),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2034.0, mode('holf-5')).
+@(2036.0,
+  add(m19 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(2.25),
+		 show_gauge(true),
+		 instrument_name('holf-5')))).
+@(2039.0, mode('holf-10')).
+@(2042.0,
+  add(m20 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(8.2),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2050.0, mode('holf-5')).
+@(2052.0,
+  add(m21 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(13.6),
+		 show_gauge(true),
+		 instrument_name('holf-5')))).
+@(2055.0,
+  add(m22 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(4.45),
+		 show_gauge(true),
+		 instrument_name('holf-5')))).
+@(2059.0, mode('holf-10')).
+@(2060.0,
+  add(m23 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(24.15),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2062.0,
+  add(m24 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(22.3),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2064.0,
+  add(m25 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(20.1),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2065.0,
+  add(m26 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(9.25),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2066.0,
+  add(m27 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(5.5),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2067.0,
+  add(m28 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(2.85),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2068.0 - 2071.0, tool(m28, [])).
+@(2073.0,
+  add(m29 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(32.25),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2074.0,
+  add(m30 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(34.15),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2075.0,
+  add(m31 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(29.5),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2077.0,
+  add(m32 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(26.75),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2078.0,
+  add(m33 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(22.7),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2079.0,
+  add(m34 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(23.35),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2083.0,
+  add(m35 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(20.95),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2086.0,
+  add(m36 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(18.95),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2088.0,
+  add(m37 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(15.25),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2091.0,
+  add(m38 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(12.3),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2094.0, mode(bolf5)).
+@(2098.0,
+  add(m39 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(5),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(1.6),
+		 show_gauge(true),
+		 instrument_name(bolf5)))).
+@(2101.0, mode(bolf10)).
+@(2102.0,
+  add(m40 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(3.35),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2105.0,
+  add(m41 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(6.55),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2119.0,
+  add(m42 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(5.05),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2127.0 - 2131.0, tool(m40, [])).
+@(2133.0,
+  add(m43 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(7.3),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2136.0,
+  add(m44 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(3.75),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2146.0,
+  add(m45 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(11.85),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2147.0 - 2149.0, tool(m45, [])).
+@(2153.0,
+  add(m46 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(12.9),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2156.0,
+  add(m47 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(8.65),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2226.0, action(delete_all)).
+@(2230.0, mode(puntbron)).
+@(2236.0,
+  add(l6 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(-0.45),
+		 pos_y(0.05),
+		 instrument_name(puntbron)))).
+@(2245.0, mode(rotlamp)).
+@(2249.0 - 2267.0,
+  rotate(l6,
+	 [ @(0.0, drag(13.9027)),
+	   @(1.0, drag(3.30187)),
+	   @(2.0, drag(0.550904)),
+	   @(4.0, drag(-1.10171)),
+	   @(4.0, drag(-0.550904)),
+	   @(5.0, drag(1.10171)),
+	   @(6.0, drag(0.550904)),
+	   @(9.0, drag(-0.550904)),
+	   @(10.0, drag(0.550904)),
+	   @(12.0, drag(-1.6523)),
+	   @(13.0, drag(1.10171)),
+	   @(14.0, drag(0.550904)),
+	   @(15.0, drag(-0.550904)),
+	   @(17.0, drag(-1.10171)),
+	   @(17.0, drag(-0.550904)),
+	   @(18.0, drag(0))
+	 ])).
+@(2270.0, mode('holf-10')).
+@(2273.0,
+  add(m48 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(7.2),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2278.0, mode(bolf10)).
+@(2281.0,
+  add(m49 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(13.45),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2288.0, mode(xmove)).
+@(2291.0 - 2335.0,
+  move(m49, x,
+       [ @(0.0, drag(12.7)),
+	 @(1.0, drag(11.8)),
+	 @(2.0, drag(11.3)),
+	 @(3.0, drag(10.05)),
+	 @(4.0, drag(9.55)),
+	 @(5.0, drag(9.45)),
+	 @(6.0, drag(9.35)),
+	 @(7.0, drag(9.25)),
+	 @(9.0, drag(9.2)),
+	 @(10.0, drag(8.85)),
+	 @(12.0, drag(8.6)),
+	 @(13.0, drag(8.5)),
+	 @(14.0, drag(8.4)),
+	 @(15.0, drag(8.3)),
+	 @(17.0, drag(8.25)),
+	 @(18.0, drag(7.8)),
+	 @(19.0, drag(7.75)),
+	 @(20.0, drag(7.7)),
+	 @(21.0, drag(7.6)),
+	 @(23.0, drag(7.55)),
+	 @(31.0, drag(7.5)),
+	 @(32.0, drag(7.55)),
+	 @(37.0, drag(7.6)),
+	 @(40.0, drag(7.45)),
+	 @(41.0, drag(7.55)),
+	 @(42.0, drag(7.6))
+       ])).
+@(2353.0, mode('holf-10')).
+@(2354.0,
+  add(m50 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(17.3),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2356.0,
+  add(m51 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(12.8),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2359.0,
+  add(m52 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(10.35),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2373.0, mode(ymove)).
+@(2379.0 - 2389.0,
+  move(l6, y, 0.05,
+       [ @(0.0, drag(0.4)),
+	 @(1.0, drag(2.45)),
+	 @(2.0, drag(3)),
+	 @(3.0, drag(2.05)),
+	 @(4.0, drag(-1.85)),
+	 @(5.0, drag(-1.9)),
+	 @(5.0, drag(-1.85)),
+	 @(7.0, drag(-2.05)),
+	 @(8.0, drag(0.65)),
+	 @(9.0, drag(3.15))
+       ])).
+@(2398.0, mode(protractor)).
+@(2417.0, mode(rotlamp)).
+@(2422.0 - 2424.0,
+  rotate(l6,
+	 [ @(0.0, drag(-0.954841)),
+	   @(1.0, drag(-26.1468)),
+	   @(1.0, drag(-16.607)),
+	   @(2.0, drag(-10.9228))
+	 ])).
+@(2428.0, mode('holf-10')).
+@(2428.0,
+  add(m53 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(2.65),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2438.0, mode(bolf10)).
+@(2449.0,
+  add(m54 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(9.45),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2451.0,
+  add(m55 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(4.5),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2453.0,
+  add(m56 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(27.85),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2455.0,
+  add(m57 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(33.8),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2457.0,
+  add(m58 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(32),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2458.0,
+  add(m59 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(30),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2460.0,
+  add(m60 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(29.05),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2468.0, mode(xmove)).
+@(2480.0 - 2486.0,
+  move(m57, x,
+       [ @(0.0, drag(33.6)),
+	 @(2.0, drag(33.55)),
+	 @(4.0, drag(33.7)),
+	 @(5.0, drag(33.6))
+       ])).
+@(2494.0, mode('holf-10')).
+@(2495.0,
+  add(m61 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(24.75),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2497.0,
+  add(m62 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(23.2),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2500.0,
+  add(m63 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(27.3),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2501.0,
+  add(m64 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(-10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(24.15),
+		 show_gauge(true),
+		 instrument_name('holf-10')))).
+@(2505.0, mode(bolf10)).
+@(2507.0,
+  add(m65 = lens(label(''),
+		 radius(5),
+		 thickness(0.1),
+		 focal_distance(10),
+		 sfere_left(*),
+		 sfere_right(*),
+		 breaking_index(1.51),
+		 pos_x(22.35),
+		 show_gauge(true),
+		 instrument_name(bolf10)))).
+@(2512.0, mode(delete)).
+@(2515.0, delete(m63)).
+@(2570.0 - 2582.0,
+  move(l6, y, 3.15,
+       [ @(0.0, drag(2.2)),
+	 @(1.0, drag(0.95)),
+	 @(2.0, drag(0.35)),
+	 @(3.0, drag(0.2)),
+	 @(4.0, drag(0)),
+	 @(6.0, drag(0.5)),
+	 @(7.0, drag(1)),
+	 @(8.0, drag(1.1)),
+	 @(9.0, drag(1.2)),
+	 @(10.0, drag(0.8)),
+	 @(11.0, drag(0.65))
+       ])).
+/*  Log file created by optica simulation
+    Date: Thu Oct 02 10:13:07 1997
+*/
+
+%% Header
+pp('01').
+epoch(875779987.0).
+%% End Header
+
+@(7.0, mode(bolf5)).
+@(9.0, experiment(open('fase 2'))).
+@(41.0 - 52.0,
+  view(theory,
+       [ @(0.0, action(theory_viewer))
+       ])).
+@(85.0, mode(puntbron)).
+@(89.0,
+  add(l1 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(1.05),
+		 pos_y(7.25),
+		 instrument_name(puntbron)))).
+@(91.0, mode(rotlamp)).
+@(92.0 - 95.0,
+  rotate(l1,
+	 [ @(0.0, drag(-63.778)),
+	   @(1.0, drag(-51.1702)),
+	   @(2.0, drag(43.2101)),
+	   @(2.0, drag(-39.2894)),
+	   @(2.0, drag(-38.2338))
+	 ])).
+@(98.0, mode(bolf10)).
+@(100.0,
+  add(m1 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(10),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(10.1),
+		show_gauge(true),
+		instrument_name(bolf10)))).
+@(113.0, mode(ymove)).
+@(115.0 - 117.0,
+  move(l1, y, 7.25,
+       [ @(0.0, drag(-0.05))
+       ])).
+@(123.0, mode(rotlamp)).
+@(126.0 - 136.0,
+  rotate(l1,
+	 [ @(0.0, drag(-53.7462)),
+	   @(1.0, drag(30.9638)),
+	   @(1.0, drag(20.2826)),
+	   @(2.0, drag(2.24574)),
+	   @(3.0, drag(0)),
+	   @(4.0, drag(-1.1233)),
+	   @(5.0, drag(1.1233)),
+	   @(7.0, drag(-1.1233)),
+	   @(9.0, drag(0))
+	 ])).
+@(140.0, mode(bolf5)).
+@(142.0,
+  add(m2 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(14),
+		show_gauge(true),
+		instrument_name(bolf5)))).
+@(149.0, mode('holf-10')).
+@(156.0,
+  add(m3 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(-10),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(19.15),
+		show_gauge(true),
+		instrument_name('holf-10')))).
+@(161.0, mode(xmove)).
+@(173.0 - 183.0,
+  move(m3, x,
+       [ @(1.0, drag(20.8)),
+	 @(1.0, drag(20.75)),
+	 @(2.0, drag(19.1)),
+	 @(3.0, drag(18.8)),
+	 @(3.0, drag(19.7)),
+	 @(5.0, drag(19.2)),
+	 @(5.0, drag(19.4)),
+	 @(8.0, drag(19.35)),
+	 @(9.0, drag(19.3))
+       ])).
+@(202.0 - 221.0,
+  move(l1, x, 1.05,
+       [ @(3.0, drag(4.05)),
+	 @(4.0, drag(10.25)),
+	 @(6.0, drag(18.45)),
+	 @(7.0, drag(30.5)),
+	 @(9.0, drag(37.55)),
+	 @(9.0, drag(10.2)),
+	 @(12.0, drag(-0.45)),
+	 @(12.0, drag(0.55)),
+	 @(12.0, drag(0.5)),
+	 @(15.0, drag(-0.45)),
+	 @(16.0, drag(1.4)),
+	 @(17.0, drag(0.9)),
+	 @(18.0, drag(0.85)),
+	 @(18.0, drag(1.2))
+       ])).
+@(227.0, mode('holf-5')).
+@(228.0,
+  add(m4 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(-5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(5.9),
+		show_gauge(true),
+		instrument_name('holf-5')))).
+@(237.0, mode(bolf5)).
+@(239.0,
+  add(m5 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(8.85),
+		show_gauge(true),
+		instrument_name(bolf5)))).
+@(249.0, mode(delete)).
+@(263.0, delete(m3)).
+@(291.0, mode(bolf5)).
+@(293.0,
+  add(m6 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(14.7),
+		show_gauge(true),
+		instrument_name(bolf5)))).
+@(301.0, mode(ymove)).
+@(302.0, mode(xmove)).
+@(305.0 - 371.0,
+  move(m6, x,
+       [ @(1.0, drag(17.3)),
+	 @(14.0, drag(19)),
+	 @(14.0, drag(18.35)),
+	 @(15.0, drag(18)),
+	 @(22.0, drag(18.05)),
+	 @(26.0, drag(19)),
+	 @(30.0, drag(18.95)),
+	 @(32.0, drag(19.05)),
+	 @(32.0, drag(0)),
+	 @(32.0, drag(10.55)),
+	 @(32.0, drag(8.15)),
+	 @(32.0, drag(14.85)),
+	 @(33.0, drag(2.1)),
+	 @(33.0, drag(20.45)),
+	 @(33.0, drag(3.85)),
+	 @(33.0, drag(18.75)),
+	 @(34.0, drag(0)),
+	 @(34.0, drag(0.2)),
+	 @(34.0, drag(0)),
+	 @(35.0, drag(0.05)),
+	 @(41.0, drag(0)),
+	 @(42.0, drag(2.4)),
+	 @(44.0, drag(2.45)),
+	 @(44.0, drag(2.3)),
+	 @(46.0, drag(3.2)),
+	 @(47.0, drag(2.6)),
+	 @(48.0, drag(2.45)),
+	 @(48.0, drag(33.15)),
+	 @(48.0, drag(31.75)),
+	 @(49.0, drag(18.5)),
+	 @(52.0, drag(30.95)),
+	 @(52.0, drag(30.4)),
+	 @(53.0, drag(25.2)),
+	 @(54.0, drag(21.9)),
+	 @(55.0, drag(21.85)),
+	 @(56.0, drag(21.8)),
+	 @(57.0, drag(21.65)),
+	 @(60.0, drag(20.35)),
+	 @(63.0, drag(20.4)),
+	 @(63.0, drag(17.2)),
+	 @(64.0, drag(16.75)),
+	 @(64.0, drag(21.4))
+       ])).
+@(382.0, mode(bolf5)).
+@(384.0,
+  add(m7 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(5),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(24.1),
+		show_gauge(true),
+		instrument_name(bolf5)))).
+@(388.0, mode(ymove)).
+@(439.0, mode(delete)).
+@(456.0, delete(m7)).
+@(471.0, mode(ymove)).
+@(487.0 - 498.0,
+  move(l1, y, -0.05,
+       [ @(0.0, drag(-0.55)),
+	 @(5.0, drag(-0.4)),
+	 @(6.0, drag(-0.25)),
+	 @(7.0, drag(-0.1)),
+	 @(8.0, drag(0))
+       ])).
+@(511.0, mode(xmove)).
+@(522.0 - 529.0,
+  move(m6, x,
+       [ @(0.0, drag(21.05)),
+	 @(1.0, drag(20.95)),
+	 @(2.0, drag(20.9)),
+	 @(3.0, drag(21.3)),
+	 @(5.0, drag(21.35)),
+	 @(6.0, drag(21.45))
+       ])).
+@(607.0, mode(delete)).
+@(621.0, mode(consline)).
+@(651.0, mode(ruler)).
+@(674.0,
+  add(d1 = ruler(from(m4), to(centerline), pos_y(-0.1)))).
+@(682.0, add(d2 = ruler(from(m4), to(m5), pos_y(-0.1)))).
+@(699.0, mode(delete)).
+@(720.0, delete(m4)).
+@(735.0, mode(consline)).
+@(739.0,
+  add(c1 = construction_line(pos_x(4.65),
+			     instrument_name(consline)))).
+@(745.0, mode(ruler)).
+@(757.0, add(d3 = ruler(from(centerline),
+			to(c1),
+			pos_y(0.1)))).
+@(760.0, mode(xmove)).
+@(780.0, tool(varname, '4,7')).
+@(809.0, mode(xmove)).
+@(812.0 - 816.0,
+  move(c1, x,
+       [ @(0.0, drag(6))
+       ])).
+@(818.0 - 819.0,
+  move(c1, x,
+       [ @(0.0, drag(5.6))
+       ])).
+@(824.0, mode(ruler)).
+@(830.0,
+  add(d4 = ruler(from(c1), to(centerline), pos_y(-0.05)))).
+@(837.0, mode(xmove)).
+@(844.0 - 846.0,
+  move(c1, x,
+       [ @(0.0, drag(5.9))
+       ])).
+@(852.0, mode(ruler)).
+@(856.0, add(d5 = ruler(from(c1),
+			to(centerline),
+			pos_y(0.05)))).
+@(867.0, mode(delete)).
+@(873.0, delete(m5)).
+@(886.0, delete(m2)).
+@(915.0, delete(m6)).
+@(922.0, delete(c1)).
+@(928.0, mode(xmove)).
+@(936.0 - 973.0,
+  move(m1, x,
+       [ @(1.0, drag(9.8)),
+	 @(1.0, drag(10.35)),
+	 @(8.0, drag(10.5)),
+	 @(9.0, drag(10.1)),
+	 @(9.0, drag(10.15)),
+	 @(13.0, drag(10.3)),
+	 @(13.0, drag(10.2)),
+	 @(13.0, drag(36.75)),
+	 @(14.0, drag(24.5)),
+	 @(15.0, drag(18.85)),
+	 @(16.0, drag(16.95)),
+	 @(17.0, drag(16.15)),
+	 @(18.0, drag(13.45)),
+	 @(19.0, drag(12.5)),
+	 @(21.0, drag(11.95)),
+	 @(22.0, drag(11.65)),
+	 @(24.0, drag(11.45)),
+	 @(26.0, drag(11.35)),
+	 @(33.0, drag(11.25)),
+	 @(36.0, drag(11.2))
+       ])).
+@(978.0, mode(ruler)).
+@(983.0,
+  add(d6 = ruler(from(m1), to(centerline), pos_y(-0.05)))).
+@(1009.0, mode(protractor)).
+@(1028.0,
+  add(a1 = protractor(path('l1-beam'),
+		      segment(1),
+		      location(8.4)))).
+@(1034.0,
+  add(a2 = protractor(path('l1-beam2'),
+		      segment(1),
+		      location(7.4)))).
+@(1035.0 - 1039.0, tool(a2, [])).
+@(1043.0, mode(delete)).
+@(1046.0, delete(a1)).
+@(1048.0, delete(a2)).
+@(1054.0, mode(protractor)).
+@(1057.0,
+  add(a3 = protractor(path('l1-beam2'),
+		      segment(1),
+		      location(8.1)))).
+@(1063.0,
+  add(a4 = protractor(path('l1-beam1'),
+		      segment(1),
+		      location(8.35)))).
+@(1217.0, action(calculator)).
+@(1279.0 - 1443.0,
+  notebook([ @(0.0, action(notebook)),
+	     @(66.0, view('note-4')),
+	     @(164.0,
+	       note('note-4', 'de SBL bui ...', 'fase 2',
+		    'de SBL buigt over een afstand van 10cm een hoek van 5graden om',
+		    state(state, '',
+			  [ l1 = lamp3(switch(true),
+				       angle(0),
+				       divergence(5),
+				       pos_x(1.2),
+				       pos_y(0),
+				       instrument_name(puntbron)),
+			    m1 = lens(label(''),
+				      radius(5),
+				      thickness(0.1),
+				      focal_distance(10),
+				      sfere_left(*),
+				      sfere_right(*),
+				      breaking_index(1.51),
+				      pos_x(11.2),
+				      show_gauge(true),
+				      instrument_name(bolf10)),
+			    d6 = ruler(from(m1),
+				       to(centerline),
+				       pos_y(-0.05)),
+			    a3 = protractor(path('l1-beam2'),
+					    segment(1),
+					    location(8.1)),
+			    a4 = protractor(path('l1-beam1'),
+					    segment(1),
+					    location(8.35))
+			  ])))
+	   ])).
+@(1451.0, mode(bolf5)).
+@(1451.0,
+  experiment(close('fase 2', 1442, 1462,
+		   state(state, '',
+			 [ l1 = lamp3(switch(true),
+				      angle(0),
+				      divergence(5),
+				      pos_x(1.2),
+				      pos_y(0),
+				      instrument_name(puntbron)),
+			   m1 = lens(label(''),
+				     radius(5),
+				     thickness(0.1),
+				     focal_distance(10),
+				     sfere_left(*),
+				     sfere_right(*),
+				     breaking_index(1.51),
+				     pos_x(11.2),
+				     show_gauge(true),
+				     instrument_name(bolf10)),
+			   d6 = ruler(from(m1),
+				      to(centerline),
+				      pos_y(-0.05)),
+			   a3 = protractor(path('l1-beam2'),
+					   segment(1),
+					   location(8.1)),
+			   a4 = protractor(path('l1-beam1'),
+					   segment(1),
+					   location(8.35))
+			 ])))).
+@(1453.0, experiment(open('fase 3'))).
+@(1454.0 - 1464.0, view(theory, [])).
+@(1464.0 - 1470.0, view(assignment, [])).
+@(1476.0, mode(puntbron)).
+@(1481.0,
+  add(l2 = lamp3(switch(true),
+		 angle(80),
+		 divergence(5),
+		 pos_x(0.4),
+		 pos_y(0),
+		 instrument_name(puntbron)))).
+@(1486.0, mode(rotlamp)).
+@(1493.0 - 1499.0,
+  rotate(l2,
+	 [ @(0.0, drag(-19.9831)),
+	   @(1.0, drag(-15.2551)),
+	   @(2.0, drag(6.22583)),
+	   @(3.0, drag(2.08257)),
+	   @(4.0, drag(0))
+	 ])).
+@(1516.0, mode('holf-10')).
+@(1523.0,
+  add(m8 = lens(label(''),
+		radius(5),
+		thickness(0.1),
+		focal_distance(-10),
+		sfere_left(*),
+		sfere_right(*),
+		breaking_index(1.51),
+		pos_x(10),
+		show_gauge(true),
+		instrument_name('holf-10')))).
+@(1535.0, mode(ruler)).
+@(1545.0,
+  add(d7 = ruler(from(centerline), to(m8), pos_y(-8.2)))).
+@(1549.0, mode(xmove)).
+@(1553.0 - 1556.0,
+  move(m8, x,
+       [ @(0.0, drag(10.7)),
+	 @(2.0, drag(10.6))
+       ])).
+@(1558.0, mode(delete)).
+@(1559.0, delete(d7)).
+@(1564.0, mode(ruler)).
+@(1587.0,
+  add(d8 = ruler(from(centerline), to(m8), pos_y(-7.75)))).
+@(1593.0, mode(xmove)).
+@(1598.0 - 1600.0,
+  move(m8, x,
+       [ @(0.0, drag(10.15)),
+	 @(1.0, drag(10.3))
+       ])).
+@(1605.0, mode(delete)).
+@(1611.0, delete(d8)).
+@(1624.0, mode(ruler)).
+@(1633.0,
+  add(d9 = ruler(from(centerline), to(m8), pos_y(-8.6)))).
+@(1637.0, mode(xmove)).
+@(1658.0 - 1662.0,
+  move(m8, x,
+       [ @(0.0, drag(11.2)),
+	 @(1.0, drag(10.7)),
+	 @(2.0, drag(10.65)),
+	 @(3.0, drag(10.55))
+       ])).
+@(1688.0, mode(tool)).
+@(1691.0 - 1706.0,
+  tool(d9,
+       [ @(9.0, tool(value, 10))
+       ])).
+@(1714.0, mode(delete)).
+@(1716.0, delete(d9)).
+@(1731.0, mode(ruler)).
+@(1737.0,
+  add(d10 = ruler(from(m8), to(centerline), pos_y(-8.8)))).
+@(1741.0, mode(protractor)).
+@(1743.0,
+  add(a5 = protractor(path('l2-beam2'),
+		      segment(2),
+		      location(6)))).
+@(1753.0, mode(delete)).
+@(1754.0, delete(a5)).
+@(1762.0, mode(protractor)).
+@(1764.0,
+  add(a6 = protractor(path('l2-beam2'),
+		      segment(1),
+		      location(7.6)))).
+@(1769.0,
+  add(a7 = protractor(path('l2-beam2'),
+		      segment(2),
+		      location(18)))).
+@(1810.0, mode(oog)).
+@(1812.0, add(e1 = eye(pos_x(31.8), instrument_name(oog)))).
+@(1818.0, mode(delete)).
+@(1826.0, delete(e1)).
+@(1890.0 - 2003.0,
+  notebook([ @(0.0, action(notebook))
+	   ])).
+@(2020.0, mode(scherm)).
+@(2021.0,
+  add(s1 = shield(pos_x(3.3),
+		  unit(1),
+		  instrument_name(scherm)))).
+@(2026.0, mode(oog)).
+@(2034.0, mode(consline)).
+@(2036.0,
+  add(c2 = construction_line(pos_x(22),
+			     instrument_name(consline)))).
+@(2040.0, mode(ruler)).
+@(2049.0, add(d11 = ruler(from(c2), to(m8), pos_y(-9.1)))).
+@(2051.0, mode(tool)).
+@(2052.0 - 2077.0,
+  tool(d11,
+       [ @(11.0, tool(value, 10))
+       ])).
+@(2095.0 - 2125.0,
+  tool(d10,
+       [ @(15.0, tool(value, 10))
+       ])).
+@(2128.0 - 2134.0, tool(d10, [])).
+@(2136.0 - 2145.0, tool(d10, [])).
+@(2156.0, mode(xmove)).
+@(2166.0 - 2170.0,
+  move(m8, x,
+       [ @(0.0, drag(26.2)),
+	 @(1.0, drag(16.35)),
+	 @(2.0, drag(12.45))
+       ])).
+@(2180.0, mode(tool)).
+@(2181.0 - 2197.0,
+  tool(d10,
+       [ @(10.0, tool(value, 10))
+       ])).
+@(2200.0, mode(ruler)).
+@(2206.0,
+  add(d12 = ruler(from(m8), to(centerline), pos_y(-7.7)))).
+@(2213.0, mode(delete)).
+@(2214.0, delete(d12)).
+@(2215.0, delete(d10)).
+@(2220.0, delete(d11)).
+@(2222.0, mode(ruler)).
+@(2225.0,
+  add(d13 = ruler(from(m8), to(centerline), pos_y(-8.55)))).
+@(2227.0, mode(tool)).
+@(2229.0 - 2250.0,
+  tool(d13,
+       [ @(17.0, tool(value, 10))
+       ])).
+@(2261.0, mode(protractor)).
+@(2266.0,
+  add(a8 = protractor(path('l2-beam2'),
+		      segment(2),
+		      location(14.45)))).
+@(2273.0, mode(delete)).
+@(2276.0, delete(a7)).
+@(2278.0, delete(a8)).
+@(2281.0, mode(extend_beam)).
+@(2292.0, mode(tool)).
+@(2294.0 - 2317.0,
+  tool(d13,
+       [ @(19.0, tool(value, 10))
+       ])).
+@(2321.0, mode(ruler)).
+@(2325.0,
+  add(d14 = ruler(from(m8), to(centerline), pos_y(-8.45)))).
+@(2337.0, mode(tool)).
+@(2339.0 - 2351.0,
+  tool(d14,
+       [ @(9.0, tool(value, 10))
+       ])).
+@(2353.0, mode(ruler)).
+@(2358.0,
+  add(d15 = ruler(from(m8), to(centerline), pos_y(-7.75)))).
+@(2376.0, mode(delete)).
+@(2378.0, delete(d14)).
+@(2379.0, delete(d13)).
+@(2395.0, mode(tool)).
+@(2396.0 - 2414.0,
+  tool(d15,
+       [ @(13.0, tool(value, 10))
+       ])).
+@(2459.0, mode(delete)).
+@(2460.0, delete(c2)).
+@(2462.0, delete(d15)).
+@(2466.0, mode(tool)).
+@(2476.0, mode(protractor)).
+@(2487.0, mode(ruler)).
+@(2493.0,
+  add(d16 = ruler(from(m8), to(centerline), pos_y(-8.45)))).
+@(2495.0, mode(tool)).
+@(2499.0 - 2517.0,
+  tool(d16,
+       [ @(13.0, tool(value, 10))
+       ])).
+@(2558.0, mode(tool)).
+@(2561.0 - 2573.0,
+  tool(d16,
+       [ @(10.0, tool(value, 10))
+       ])).
+@(2576.0, mode(ruler)).
+@(2585.0,
+  add(d17 = ruler(from(m8), to(centerline), pos_y(-7.35)))).
+@(2651.0, mode(vangscherm)).
+@(2652.0,
+  add(s2 = shield2(pos_x(26.5),
+		   instrument_name(vangscherm)))).
+@(2659.0, mode(delete)).
+@(2660.0, delete(d16)).
+@(2676.0, mode(tool)).
+@(2678.0 - 2688.0,
+  tool(d17,
+       [ @(8.0, tool(value, 10))
+       ])).
+@(2699.0, measured([])).
+@(2699.0, action(show_gauges)).
+@(2705.0, mode(ruler)).
+@(2712.0,
+  add(d18 = ruler(from(m8), to(centerline), pos_y(-9.75)))).
+@(2768.0, mode(protractor)).
+@(2769.0,
+  add(a9 = protractor(path('l2-beam2'),
+		      segment(2),
+		      location(9.65)))).
+@(2847.0, mode(xmove)).
+@(2852.0 - 2860.0,
+  move(s2, x,
+       [ @(0.0, drag(25.25)),
+	 @(1.0, drag(22.05)),
+	 @(2.0, drag(18.2)),
+	 @(3.0, drag(17.9)),
+	 @(4.0, drag(20.55)),
+	 @(4.0, drag(20.5)),
+	 @(5.0, drag(20.55)),
+	 @(6.0, drag(19.3)),
+	 @(8.0, drag(33.3))
+       ])).
+@(2879.0, mode(ruler)).
+@(2882.0,
+  add(d19 = ruler(from(m8), to(centerline), pos_y(-8.55)))).
+@(2949.0,
+  add(d20 = ruler(from(centerline), to(m8), pos_y(-6.3)))).
+@(2970.0 - 3148.0,
+  notebook([ @(0.0, action(notebook)),
+	     @(178.0,
+	       note('note-5', 'hoe kan ee ...', 'fase 3',
+		    'hoe kan een en de zelfde afstand 10 cm maar ook 12.1 cm zijn? antwoord fout in het programma.',
+		    state(state, '',
+			  [ l1  = biglamp(read_only(true)),
+			    l2  = lamp3(switch(true),
+					angle(0),
+					divergence(5),
+					pos_x(0.4),
+					pos_y(0),
+					instrument_name(puntbron)),
+			    m8  = lens(label(''),
+				       radius(5),
+				       thickness(0.1),
+				       focal_distance(-10),
+				       sfere_left(*),
+				       sfere_right(*),
+				       breaking_index(1.51),
+				       pos_x(12.45),
+				       show_gauge(true),
+				       instrument_name('holf-10')),
+			    a6  = protractor(path('l2-beam2'),
+					     segment(1),
+					     location(7.6)),
+			    s1  = shield(pos_x(3.3),
+					 unit(1),
+					 instrument_name(scherm)),
+			    d17 = ruler(from(m8),
+					to(centerline),
+					pos_y(-7.35)),
+			    s2  = shield2(pos_x(33.3),
+					  instrument_name(vangscherm)),
+			    d18 = ruler(from(m8),
+					to(centerline),
+					pos_y(-9.75)),
+			    a9  = protractor(path('l2-beam2'),
+					     segment(2),
+					     location(9.65)),
+			    d19 = ruler(from(m8),
+					to(centerline),
+					pos_y(-8.55)),
+			    d20 = ruler(from(centerline),
+					to(m8),
+					pos_y(-6.3))
+			  ])))
+	   ])).
+@(3157.0,
+  quit('fase 3',
+       state(state, '',
+	     [ l1  = biglamp(read_only(true)),
+	       l2  = lamp3(switch(true),
+			   angle(0),
+			   divergence(5),
+			   pos_x(0.4),
+			   pos_y(0),
+			   instrument_name(puntbron)),
+	       m8  = lens(label(''),
+			  radius(5),
+			  thickness(0.1),
+			  focal_distance(-10),
+			  sfere_left(*),
+			  sfere_right(*),
+			  breaking_index(1.51),
+			  pos_x(12.45),
+			  show_gauge(true),
+			  instrument_name('holf-10')),
+	       a6  = protractor(path('l2-beam2'),
+				segment(1),
+				location(7.6)),
+	       s1  = shield(pos_x(3.3),
+			    unit(1),
+			    instrument_name(scherm)),
+	       d17 = ruler(from(m8),
+			   to(centerline),
+			   pos_y(-7.35)),
+	       s2  = shield2(pos_x(33.3),
+			     instrument_name(vangscherm)),
+	       d18 = ruler(from(m8),
+			   to(centerline),
+			   pos_y(-9.75)),
+	       a9  = protractor(path('l2-beam2'),
+				segment(2),
+				location(9.65)),
+	       d19 = ruler(from(m8),
+			   to(centerline),
+			   pos_y(-8.55)),
+	       d20 = ruler(from(centerline),
+			   to(m8),
+			   pos_y(-6.3))
+	     ]))).
+
