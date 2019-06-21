@@ -56,7 +56,7 @@ set_drop_cursor(Obj, Cursor) :-
 	    ),
 	    send(DragWindow, focus_cursor, Cursor)
 	).
-	    
+
 scale(Gr, ScaleX, ScaleY) :-
 	get(Gr, window, W), W \== @nil, !,
 	get(W, scale_x, ScaleX),
@@ -318,22 +318,6 @@ end([], []).
 		 *	  READING STUFF		*
 		 *******************************/
 
-pce_ifhostproperty(prolog(swi), [
-(   with_long_atoms(G) :-
-	style_check(-atom),
-	(   G
-	->  style_check(+atom)
-	;   style_check(+atom),
-	    fail
-	)),
-(   with_strings(G) :-
-	style_check(+string),
-	(   G
-	->  style_check(-string)
-	;   style_check(-string),
-	    fail
-	))],
-[ (with_long_atoms(G) :- call(G)),
-  (with_strings(G) :- call(G))
-]).
-  
+with_long_atoms(G) :- call(G).
+with_strings(G) :- call(G).
+

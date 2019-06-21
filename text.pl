@@ -43,7 +43,7 @@ initialise(TV, Kind:name, Id:name,
 	    )
 	;   TheLabel = Label
 	),
-	send(TV, send_super, initialise, 'Text viewer'),
+	send(TV, send_super, initialise, TheLabel),
 	send(TV, done_message, message(TV, quit)),
 	send(TV, slot, type, Kind),
 	send(TV, slot, id, Id),
@@ -143,7 +143,7 @@ quit(TV) :->
 	;   true
 	),
 	send(TV, destroy).
-	    
+
 
 insert_image(TV) :->
 	"Insert an image from the icons directory"::
@@ -215,7 +215,7 @@ save(TV) :->
 	->  Options = [ show_at_open(true) ]
 	;   Options = []
 	),
- 	(   get(TV, file, File),
+	(   get(TV, file, File),
 	    File \== @nil
 	->  send(File, open, write),
 	    send(File, append, String),
@@ -267,7 +267,7 @@ load(TV) :->
 	    send_part(TV/dialog/show_at_open, selection(Show))
 	;   true
 	).
-	
+
 html_tag(TV, Tag:name, From:int, Re:regex, TB:text_buffer) :->
 	"Handle an HTML tag"::
 	send(Re, replace, TB, ''),
@@ -279,7 +279,7 @@ html_tag(TV, Tag:name, From:int, Re:regex, TB:text_buffer) :->
 	;   atom_codes(Tag, Chars),
 	    phrase(image_tag(TB, From), Chars)
 	).
-	    
+
 html_entity(_TV, Ent:name, RE:regex, TB:text_buffer) :->
 	(   entity(Char, Ent)
 	->  char_code(Atom, Char),

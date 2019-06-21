@@ -89,7 +89,7 @@ load_config(Term, Fd) :-
 	load_config(Term2, Fd).
 
 do_read(Fd, Term) :-
-	catch(read_term(Fd, Term, [singletons(L)]), Error, true),
+	catch(read_term(Fd, Term, [singletons(L),module(pce)]), Error, true),
 	(   nonvar(Error)
 	->  message_to_string(Error, Msg)
 	;   L \== []
