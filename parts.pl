@@ -13,6 +13,7 @@
 	    get_part/3,			% +Spec, +Message, -Result
 	    find_graphical/2		% +Spec, -Graphical
 	  ]).
+:- use_module(library(pce)).
 
 
 		 /*******************************

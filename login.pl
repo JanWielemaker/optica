@@ -13,8 +13,8 @@
 	    run_optica/0,		% Toplevel runtime entry
 	    save_optica/1		% +Executable
 	  ]).
-:- use_module(user:library('compatibility/resource')).
 :- use_module(library(pce)).
+:- use_module(user:library('compatibility/resource')).
 :- use_module(lens).
 :- use_module(configdb).
 :- use_module(log).
@@ -53,7 +53,7 @@ initialise(D) :->
 	length(Configurations, L),
 	Cols is max(1, L // 5),
 	send(Config, columns, Cols),
-	     
+
 	send(D, append, identifier_item(student, '')),
 	send(D, append, new(Ok, button(ok))),
 	send(D, append, button(settings)),
@@ -104,7 +104,7 @@ ok(D) :->
 	    send(O, status, Status)
 	),
 	send(D, destroy).
-	
+
 cancel(D) :->
 	send(D, destroy).
 
@@ -114,12 +114,12 @@ settings(D) :->
 	send(new(O, optica), open),
 	send(O, wait),
 	send(O, configure).
-	
+
 replay(D) :->
 	get_part(D/configuration, selection, Config),
 	load_config_base(Config),
 	send(new(player), open).
-	
+
 :- pce_end_class.
 
 check_configuration :-
@@ -170,7 +170,7 @@ session_id(Name, Session) :-
 	;   send(Dir, make),
 	    Session = 1
 	).
-	    
+
 
 		 /*******************************
 		 *	      LOG UTIL		*

@@ -10,6 +10,7 @@
 :- module(rplay,
 	  [ rplay/0
 	  ]).
+:- use_module(library(pce)).
 :- use_module(save).
 :- use_module(pretty_print).
 :- use_module(configdb).
@@ -23,7 +24,7 @@ Replay optica logfiles.  Design:
 	* Load a logfile, storing it as the predicates
 
 		log_header(HeaderTerm).
-	  	log_event(N, Time, Event).
+		log_event(N, Time, Event).
 
 	  Multiple logfiles can be concatenated this way.
 
@@ -52,9 +53,9 @@ log_end_time(Time) :-
 	flag(log_last, N, N),
 	Last is N - 1,
 	log_event(Last, Stamp, _Event), !,
-	(   Stamp = From-To
+	(   Stamp = _From-To
 	->  Time = To
-	;   Time = From
+	;   Time = Stamp
 	).
 log_end_time(0).
 
@@ -75,7 +76,7 @@ time_of_event(Id, Time) :-
 	).
 
 %	log_event_id(Id)
-%	
+%
 %	Enumaret the event-id's of the current log.
 
 log_event_id(Id) :-
@@ -172,7 +173,7 @@ fix_mode_switches :-
 	    fail
 	;   true
 	).
-		   
+
 
 		 /*******************************
 		 *	      SHOW_LOG		*
@@ -247,7 +248,7 @@ update_experiment(experiment(open(Exp, _)), LB, Exp) :- !,
 	send(LB, slot, experiment, Exp).
 update_experiment(_, LB, Exp) :-
 	get(LB, experiment, Exp).
-	
+
 register_icon(LB, IconName:name) :->
 	(   get(LB, styles, StyleSheet),
 	    get(StyleSheet, value, IconName, _)
@@ -287,13 +288,13 @@ event_icon(mode(Mode),		_, Icon,		'') :-
 	config(instrument(Mode, Attrs, _)),
 	memberchk(icon(Icon), Attrs), !.
 event_icon(mode(Tool),		_, ToolIcon,		'') :-
-	instrument:tool(Tool, Attributes), 		% HACK
+	instrument:tool(Tool, Attributes),		% HACK
 	memberchk(image(ToolIcon), Attributes), !.
 event_icon(action(Tool),	_, ToolIcon,		'') :-
-	instrument:tool(Tool, Attributes), 		% HACK
+	instrument:tool(Tool, Attributes),		% HACK
 	memberchk(image(ToolIcon), Attributes), !.
 event_icon(action(Tool),	_, ToolIcon,		'') :-
-	instrument:tool(_, Attributes), 		% HACK
+	instrument:tool(_, Attributes),			% HACK
 	memberchk(action(Tool), Attributes),
 	memberchk(image(ToolIcon), Attributes), !.
 event_icon(rotate(Name, _),	_, 'rotlamp.xpm',	Name).
@@ -309,18 +310,18 @@ event_icon(measured(List),	_, 'gauge.xpm',		Comment) :-
 	concat_atom(Names, ', ', Comment).
 event_icon(experiment(open(Name, _)), _, 'take.xpm',	Name).
 event_icon(experiment(close(Name, _, _ ,_)), _, 'exit.xpm', Name).
-event_icon(quit(Name, _), 	_, 'exit.xpm', 		Name).
-event_icon(_, 			_, 'mini-question.xpm',	'').
+event_icon(quit(Name, _),	_, 'exit.xpm',		Name).
+event_icon(_,			_, 'mini-question.xpm',	'').
 
-instrument_icon(lens, 		   _, 'poslens.xpm').
-instrument_icon(ruler, 		   _, 'ruler.xpm').
+instrument_icon(lens,		   _, 'poslens.xpm').
+instrument_icon(ruler,		   _, 'ruler.xpm').
 instrument_icon(protractor,	   _, 'protractor.xpm').
 instrument_icon(beam_extender,	   _, 'extbeam.xpm').
 instrument_icon(construction_line, T, 'hconsline.xpm') :-
 	arg(_, T, orientation(horizontal)).
 instrument_icon(construction_line, _, 'consline.xpm').
-instrument_icon(calculator, 	   _, 'calc.xpm').
-instrument_icon(_,    		   _, 'mini-question.xpm').
+instrument_icon(calculator,	   _, 'calc.xpm').
+instrument_icon(_,		   _, 'mini-question.xpm').
 
 functor(Term, Name) :-
 	functor(Term, Name, _Arity).
@@ -357,7 +358,7 @@ initialise(P) :->
 	send(TB, attribute, reference, point(0,0)),
 	send(HG, attribute, reference, point(0,0)),
 	send(D, resize_message, message(D, layout, @arg2)),
-	send_list(TB, append, 
+	send_list(TB, append,
 		  [ tool_button(load,
 				'restore.xpm',
 				'Load Optica Logfile')
@@ -453,7 +454,7 @@ play_to(P, Id:int) :->
 	send(P, goto_start_of_experiment, Id),
 	send(P, slot, skipping, @off),
 	play_to(P, Id).
-	
+
 
 play_to(P, Id) :-
 	send(P, slot, play_status, playing),
@@ -506,7 +507,7 @@ delay_to(P, Time:real) :->
 	    ;   send(P, delay, Delay)
 	    )
 	).
-	
+
 delay(P, Time:real) :->
 	"Do the real delay"::
 	get(P, member, dialog, D),
@@ -583,7 +584,7 @@ rplay(Time, Action, Player) :-
 	send(Player, delay_to, Time),
 	get(Player, optica, Optica),
 	rdo(Action, Optica).
-	
+
 rdo(add(Term), Optica) :-
 	get(Optica, member, optical_workspace, WS),
 	send(@optical_workspace, assign, WS), % must be scoped!
@@ -593,7 +594,7 @@ rdo(add(Term), Optica) :-
 	send(WS, display, Object),
 	send(WS, update),
 	(   send(Object, has_send_method, show_value)
-	->  send(Object, show_value, @on) 	% dubious
+	->  send(Object, show_value, @on)	% dubious
 	;   true
 	).
 rdo(add(_Term), _Optica) :-
@@ -651,7 +652,7 @@ drag_actions([@(TD, Term)|Actions], T0, Player, Pattern, Goal) :-
 	CopiedGoal,
 	send(@display, synchronise),
 	drag_actions(Actions, T0, Player, Pattern, Goal).
-	
+
 all_actions([], _, _, _, _).
 all_actions([@(TD, Term)|Actions], T0, Player, Pattern, Goal) :-
 	copy_term(Pattern-Goal, Term-CopiedGoal),	% avoid instantiation
@@ -663,7 +664,7 @@ all_actions([@(TD, Term)|Actions], T0, Player, Pattern, Goal) :-
 	;   send(@display, synchronise)
 	),
 	all_actions(Actions, T0, Player, Pattern, Goal).
-	
+
 notebook_action(action(notebook), _) :- !.
 notebook_action(note(Id, Label, Experiment, Text, StateTerm), NoteBook) :- !,
 	repeat,
